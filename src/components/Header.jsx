@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 function Header() {
   
     return (
-      <header>
-        <nav id="menu border ">
+      <header className="max-w-screen-md ">
+        <nav id="menu  ">
           <Link to="/">
             <div className="flex font-orpheus text-4xl text-stone-100 justify-center "><span className="sr-only">Home</span>MB.</div>
           </Link>  

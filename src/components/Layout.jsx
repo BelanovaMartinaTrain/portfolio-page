@@ -5,9 +5,9 @@ import Footer from "./Footer"
 function Layout() {
   
     return (
-        <div className="p-12 flex flex-col min-h-[100vh]">
+        <div className="p-12 flex flex-col min-h-[100vh] content-center  ">
             <Header />
-            <main className="mt-8">
+            <main className="mt-8 ">
                 <Outlet />
             </main>
             <Footer/>
