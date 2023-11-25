@@ -5,12 +5,14 @@ import Footer from "./Footer"
 function Layout() {
   
     return (
-        <div className="p-12 flex flex-col min-h-[100vh] content-center  ">
-            <Header />
-            <main className="mt-8 ">
-                <Outlet />
-            </main>
-            <Footer/>
+        <div className="flex justify-center bg-papradMakka bg-cover bg-no-repeat ">
+            <div className="p-4 sm:p-10 flex flex-col min-h-[100vh] content-center  max-w-5xl w-full">
+                <Header />
+                <main className="  sm:mt-8 ">
+                    <Outlet />
+                </main>
+                <Footer/>
+            </div>
         </div>
     )
   }
