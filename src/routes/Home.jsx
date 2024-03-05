@@ -5,8 +5,8 @@ function Home() {
     return (
         <div className="bg-black bg-opacity-40 sm:p-12  p-4 rounded-xl ">
             <div className="sm:grid sm:grid-cols-4 sm:grid-rows-2  grid-flow-row ">
-                <section className="sm:self-center flex justify-center mt-8 sm:mt-0 sm:row-span-2 sm:col-span-2 ">
-                    <img src="./Foto-small.jpg" className="h-auto max-[376px]:w-60 w-80 xl:w-96 rounded-lg " alt="profile picture" aria-description="picture of Martina, closeup with blurred background, smiling"/>
+                <section className=" sm:self-center flex justify-center mt-8 sm:mt-0 sm:row-span-2 sm:col-span-2 ">
+                    <img src="./Foto-small.jpg" className="h-auto max-[376px]:w-60 w-80 xl:w-96 rounded-lg " alt="Closeup of Martina with a blurred background, she's smiling subtly"/>
                 </section>
                 <section className="max-[376px]:text-sm text-center text-stone-200 font-dmsans  grid-flow-col sm:col-span-2 sm:align-middle sm:row-span-2 sm:items-center sm:justify-between sm:self-center">
                     <h1 className="max-[376px]:text-lg text-2xl  mt-5 ">Ahoj!</h1>
