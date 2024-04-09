@@ -2,11 +2,12 @@
 import React, { useEffect, useRef } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "../../components/ui/revealEffect";
+import { CanvasRevealEffect } from "./revealEffect";
 
+// eslint-disable-next-line react/prop-types
 export function CanvasRevealEffectDemo3({ children }) {
     const [isLoaded, setIsLoaded] = React.useState(false);
-    const revealRef = useRef<HTMLDivElement>(null);
+    const revealRef = useRef(null);
 
     useEffect(() => {
         if (!revealRef.current) return;
@@ -17,7 +18,7 @@ export function CanvasRevealEffectDemo3({ children }) {
         <div
             ref={revealRef}
             onMouseEnter={() => setIsLoaded(true)}
-            className="z-10 rounded-2xl h-[40rem] flex flex-col lg:flex-row overflow-hidden items-center justify-center bg-black w-full gap-4 mx-auto px-8 relative"
+            className="z-10 rounded-2xl h-[30rem] sm:h-[40rem] flex flex-row overflow-hidden items-center justify-center bg-black w-full  mx-auto px-2 relative"
         >
             {children}
             <AnimatePresence>
@@ -38,7 +39,7 @@ export function CanvasRevealEffectDemo3({ children }) {
                 )}
             </AnimatePresence>
             {/* Radial gradient for the cute fade */}
-            <div className="absolute inset-0 [mask-image:radial-gradient(600px_at_center,white,transparent)] bg-black/60 dark:bg-black/100" />
+            <div className="absolute inset-0 [mask-image:radial-gradient(100px_at_center,white,transparent)] xl:[mask-image:radial-gradient(600px_at_center,white,transparent)] bg-black/60 dark:bg-black/100" />
         </div>
     );
 }
