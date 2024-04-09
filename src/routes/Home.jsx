@@ -1,13 +1,23 @@
 //import { CanvasRevealEffectDemo3 } from "../components/ui/homePageEffect";
+import { useEffect, useState, useRef } from "react";
 import Button from "../components/Button";
 import { SparklesBg } from "../components/ui/sparklesBg";
 
 function Home() {
-    //bg-black bg-opacity-40
+    const [isLoading, setIsLoading] = useState(true);
+    const textRef = useRef(null);
+
+    useEffect(() => {
+        if (!textRef) return;
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 300);
+    }, []);
+
     return (
-        <div className="  p-0   ">
+        <div className={`p-0 transition-opacity ease-in duration-500 mt-auto ${isLoading ? "opacity-0" : "opacity-100"}`}>
             <SparklesBg>
-                <div className=" sm:p-12  p-4 rounded-2xl z-50 ">
+                <div ref={textRef} className=" sm:p-12  p-4 rounded-2xl z-50 ">
                     <div className="grid lg:grid-cols-8 lg:grid-rows-2  grid-flow-row tracking-wider">
                         <section className=" sm:self-center flex justify-center mt-8 sm:mt-0 sm:row-span-2 sm:col-span-6 "></section>
                         <section className="text-lg md:text-xl lg:text-2xl leading-9 text-center text-stone-50 font-dmsans   grid-flow-col sm:col-span-6 sm:col-start-2 sm:align-middle sm:row-span-2 sm:items-center sm:justify-between sm:self-center">

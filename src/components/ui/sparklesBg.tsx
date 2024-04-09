@@ -10,10 +10,10 @@ export function SparklesBg({ children }) {
                     id="tsparticlesfullpage"
                     background="transparent"
                     minSize={0.2}
-                    maxSize={1.5}
-                    particleDensity={180}
+                    maxSize={1.8}
+                    particleDensity={200}
                     className="w-full h-full"
-                    particleColor="#FFFFFF"
+                    particleColor="#93C5FD"
                     speed={0.5}
                 />
             </div>
