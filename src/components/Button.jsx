@@ -1,11 +1,10 @@
+// eslint-disable-next-line react/prop-types
 const Button = ({ children }) => {
-  if (!children) {
-    children = "default"
-  } 
+    return (
+        <button className="transition ease-in-out z-40  px-10 py-3 rounded-lg bg-blue-900 shadow-base-100 shadow-md hover:bg-blue-600 bg-opacity-100 hover:-translate-y-0.5 font-bold font-dmsans text-lg ">
+            {children}
+        </button>
+    );
+};
 
-  return (
-    <button className="transition ease-in-out delay-150 px-10 py-3 rounded-lg bg-[#02587D] shadow-base-100 shadow-md hover:bg-[#0A5D75] bg-opacity-100  font-bold font-dmsans text-lg ">{children}</button>
-  )
-}
-
-export default Button
+export default Button;

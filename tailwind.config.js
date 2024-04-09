@@ -10,7 +10,8 @@ export default {
           noto: 'Noto Sans, sans-serif',
           poppins: 'Poppins, sans-serif',
           cinzel: 'Cinzel, serif', 
-          dmsans: 'DM Sans, sans-serif'
+          dmsans: 'DM Sans, sans-serif',
+          quicksand: 'Quicksand, sans-serif'
 
       },
       dropShadow: {
