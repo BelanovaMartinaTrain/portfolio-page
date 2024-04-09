@@ -9,7 +9,7 @@ function Header() {
                         <span className="sr-only">Home</span>MB.
                     </div>
                 </Link>
-                <ul className="text-sm [400px]:text-base sm:w-1/2 font-dmsans  md:text-xl text-stone-100 flex sm:flex-row sm:justify-around mt-4 sm:mt-0   justify-center ">
+                <ul className="text-sm [450px]:text-base sm:w-1/2 font-dmsans  md:text-xl text-stone-100 flex sm:flex-row sm:justify-around mt-4 sm:mt-0   justify-center ">
                     <Link to="/" className="hover-underline-animation ">
                         HOME
                     </Link>

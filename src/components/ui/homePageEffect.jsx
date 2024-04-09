@@ -1,21 +1,33 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./revealEffect";
 
 // eslint-disable-next-line react/prop-types
 export function CanvasRevealEffectDemo3({ children }) {
-    const [isLoaded, setIsLoaded] = React.useState(false);
+    const hasWindow = typeof window !== "undefined";
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [opacities, setOpacities] = useState([0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1, 1, 1]);
+    const [width, setWidth] = useState(hasWindow ? window.innerWidth : null);
     const revealRef = useRef(null);
 
     useEffect(() => {
         if (!revealRef.current) return;
         setIsLoaded(true);
-    }, []);
+        window.addEventListener("resize", () => {
+            setWidth(window.innerWidth);
+            if (window.innerWidth < 600) {
+                setOpacities([0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1]);
+            } else {
+                setOpacities([0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1, 1, 1]);
+            }
+        });
+    }, [width]);
 
     return (
         <div
+            key={width}
             ref={revealRef}
             onMouseEnter={() => setIsLoaded(true)}
             className="z-10 rounded-2xl h-[30rem] sm:h-[40rem] flex flex-row overflow-hidden items-center justify-center bg-black w-full  mx-auto px-2 relative"
@@ -32,14 +44,14 @@ export function CanvasRevealEffectDemo3({ children }) {
                                 [139, 92, 246],
                                 [147, 197, 253],
                             ]}
-                            opacities={[0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1, 1, 1]}
+                            opacities={opacities}
                             dotSize={2}
                         />
                     </motion.div>
                 )}
             </AnimatePresence>
             {/* Radial gradient for the cute fade */}
-            <div className="absolute inset-0 [mask-image:radial-gradient(100px_at_center,white,transparent)] xl:[mask-image:radial-gradient(600px_at_center,white,transparent)] bg-black/60 dark:bg-black/100" />
+            <div className="absolute inset-0 [mask-image:radial-gradient(500px_at_center,white,transparent)]  bg-black/60 dark:bg-black/100" />
         </div>
     );
 }
