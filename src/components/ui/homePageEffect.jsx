@@ -33,7 +33,7 @@ export function CanvasRevealEffectDemo3({ children }) {
                                 [147, 197, 253],
                             ]}
                             opacities={[0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1, 1, 1]}
-                            dotSize={1}
+                            dotSize={2}
                         />
                     </motion.div>
                 )}
