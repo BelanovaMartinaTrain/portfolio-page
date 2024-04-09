@@ -18,7 +18,7 @@ export function CanvasRevealEffectDemo3({ children }) {
         window.addEventListener("resize", () => {
             setWidth(window.innerWidth);
             if (window.innerWidth < 600) {
-                setOpacities([0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1]);
+                setOpacities([0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1, 1, 1]);
             } else {
                 setOpacities([0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1, 1, 1, 1]);
             }
