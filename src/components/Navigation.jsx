@@ -11,7 +11,7 @@ export default function Navigation({ ulClassName, liClassName }) {
                     <h2
                         className={`${liClassName} ${
                             location.pathname === "/"
-                                ? "font-semibold bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
+                                ? "font-semibold  bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
                                 : "font-light text-white"
                         } hover:font-semibold`}
                     >

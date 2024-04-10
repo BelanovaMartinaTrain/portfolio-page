@@ -1,7 +1,7 @@
 //import { CanvasRevealEffectDemo3 } from "../components/ui/homePageEffect";
 import { useEffect, useState, useRef } from "react";
 import { Button } from "../components/ui/movingBorder";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { SparklesBg } from "../components/ui/sparklesBg";
 
 function Home() {
@@ -42,16 +42,16 @@ function Home() {
                                 Web Developer.
                                 <br /> Feel free to check out my portfolio and get a glimpse of my work. Enjoy!
                             </h1>
-                            <div className=" grid grid-flow-col justify-evenly ">
-                                <Button className="text-xl mr-2 uppercase  " duration="7000">
-                                    <Link to="/projects" className="">
+                            {/* <div className=" grid grid-flow-col justify-evenly "> */}
+                            {/* <Button className="text-base px-2 md:text-xl mr-2 uppercase tracking-wider md:px-6" duration="7000">
+                                    <Link to="/projects" className="py-4 px-7 ">
                                         Projects
                                     </Link>
-                                </Button>
-                                <Button className="text-xl " duration="7000">
-                                    CV
-                                </Button>
-                            </div>
+                                </Button> */}
+                            <Button className="" duration="7000">
+                                CV
+                            </Button>
+                            {/* </div> */}
                         </section>
                     </div>
                 </div>
