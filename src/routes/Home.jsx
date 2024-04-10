@@ -38,7 +38,7 @@ function Home() {
                                     FULLSTACK{" "}
                                 </span>
                                 Web Developer.
-                                <br /> Feel free to browse through my portfolio and get a glimpse of my work. Enjoy!
+                                <br /> Feel free to check out my portfolio and get a glimpse of my work. Enjoy!
                             </h1>
                             <Button>CV</Button>
                         </section>
