@@ -13,8 +13,6 @@ export function Loading() {
     const pathLengthFourth = useTransform(time, [0, 10000], [0.05, 1.2]);
     const pathLengthFifth = useTransform(time, [0, 10000], [0, 1.2]);
 
-    console.log(pathLengthFirst, pathLengthThird);
-
     return (
         <div className="h-[95dvh] bg-black w-full  rounded-md relative pt-40 overflow-clip" ref={ref}>
             <GeminiEffect pathLengths={[pathLengthFirst, pathLengthSecond, pathLengthThird, pathLengthFourth, pathLengthFifth]} />

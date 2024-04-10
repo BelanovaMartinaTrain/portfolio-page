@@ -9,13 +9,14 @@ function Home() {
 
     useEffect(() => {
         if (!textRef) return;
+
         setTimeout(() => {
             setIsLoading(false);
         }, 500);
     }, []);
 
     return (
-        <div className={`p-0 transition-opacity ease-in duration-1000 mt-auto ${isLoading ? "opacity-0" : "opacity-100"}`}>
+        <div className={`p-0  mt-auto  transition-opacity ease-in duration-1000  ${isLoading ? "opacity-0" : "opacity-100"}`}>
             <SparklesBg>
                 <div ref={textRef} className=" sm:p-10   p-2 rounded-2xl z-50 ">
                     <div className="grid sm:grid-cols-8 sm:grid-rows-2 sm:grid-flow-col  grid-rows-6 md:text-7xl text-3xl lg:text-6xl text-center font-dmsans tracking-wider text-white relative z-20">
@@ -30,11 +31,11 @@ function Home() {
 
                             <h1 className="font-extralight sm:p-10 mt-4 mb-6  drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
                                 My name is{" "}
-                                <span className="font-bold uppercase bg-gradient-to-r from-blue-400 via-blue-200  to-blue-400  bg-clip-text text-transparent">
+                                <span className="font-bold uppercase bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                                     Martina
                                 </span>
                                 . I&apos;m a{" "}
-                                <span className="font-bold capitalise bg-gradient-to-r from-blue-400 via-blue-200  to-blue-400  bg-clip-text text-transparent">
+                                <span className="font-bold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
                                     FULLSTACK{" "}
                                 </span>
                                 Web Developer.

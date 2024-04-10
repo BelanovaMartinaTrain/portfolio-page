@@ -11,10 +11,12 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Wait for 3 seconds
-        setTimeout(() => {
+        // Wait for 10 seconds
+        const timer = setTimeout(() => {
             setIsLoading(false);
         }, 10000);
+
+        return () => clearTimeout(timer);
     }, []);
 
     return isLoading ? (
