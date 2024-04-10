@@ -1,6 +1,7 @@
 //import { CanvasRevealEffectDemo3 } from "../components/ui/homePageEffect";
 import { useEffect, useState, useRef } from "react";
-import Button from "../components/Button";
+import { Button } from "../components/ui/movingBorder";
+import { Link } from "react-router-dom";
 import { SparklesBg } from "../components/ui/sparklesBg";
 
 function Home() {
@@ -9,7 +10,7 @@ function Home() {
 
     useEffect(() => {
         if (!textRef) return;
-
+        console.log(textRef.current.offsetWidth);
         setTimeout(() => {
             setIsLoading(false);
         }, 500);
@@ -41,7 +42,16 @@ function Home() {
                                 Web Developer.
                                 <br /> Feel free to check out my portfolio and get a glimpse of my work. Enjoy!
                             </h1>
-                            <Button>CV</Button>
+                            <div className=" grid grid-flow-col justify-evenly ">
+                                <Button className="text-xl mr-2 uppercase  " duration="7000">
+                                    <Link to="/projects" className="">
+                                        Projects
+                                    </Link>
+                                </Button>
+                                <Button className="text-xl " duration="7000">
+                                    CV
+                                </Button>
+                            </div>
                         </section>
                     </div>
                 </div>
