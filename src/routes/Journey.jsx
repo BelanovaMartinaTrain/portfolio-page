@@ -1,5 +1,3 @@
-import { Button } from "../components/ui/movingBorder";
-
 function Journey() {
     return (
         <>
