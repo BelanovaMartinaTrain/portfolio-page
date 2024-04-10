@@ -15,7 +15,7 @@ function Home() {
     }, []);
 
     return (
-        <div className={`p-0 transition-opacity ease-in duration-500 mt-auto ${isLoading ? "opacity-0" : "opacity-100"}`}>
+        <div className={`p-0 transition-opacity ease-in duration-1000 mt-auto ${isLoading ? "opacity-0" : "opacity-100"}`}>
             <SparklesBg>
                 <div ref={textRef} className=" sm:p-10   p-2 rounded-2xl z-50 ">
                     <div className="grid lg:grid-cols-8 lg:grid-rows-2  grid-flow-row md:text-7xl text-3xl lg:text-6xl text-center font-dmsans tracking-wider text-white relative z-20">
