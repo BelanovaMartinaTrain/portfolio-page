@@ -1,5 +1,3 @@
-import { SparklesBg } from "../components/ui/sparklesBg";
-
 function Journey() {
     return (
         <>

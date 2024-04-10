@@ -21,11 +21,6 @@ export const GeminiEffect = ({
 }) => {
     return (
         <div className={cn("h-screen top-[50vh] ", className)}>
-            {/* <div className="absolute inset-0 z-20 [mask-image:radial-gradient(15vw_5vh_at_center,white,transparent)]  bg-black/60 dark:bg-black/100" />
-            <p className="font-dmsans tracking-wider z-50 fixed top-[46%] bottom-[50%] left-[50%] right-[50%] place-self-center  text-3xl sm:text-5xl animate-pulse text-slate-50 m-0 p-0">
-                {title || `Loading...`}
-            </p> */}
-
             <svg
                 width="1440"
                 height="890"
@@ -38,9 +33,9 @@ export const GeminiEffect = ({
                     textAnchor="middle"
                     x="50%"
                     y="20%"
-                    dy="28rem"
+                    dy={`${"30rem"}`}
                     fill="LightGray"
-                    className="font-dmsans font-medium text-5xl tracking-wider animate-pulse duration-750"
+                    className="font-dmsans font-medium text-7xl sm:text-6xl md:text-5xl lg:text-[2.5rem] tracking-wider animate-pulse duration-750"
                 >
                     Loading...
                 </text>
