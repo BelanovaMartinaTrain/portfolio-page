@@ -11,9 +11,9 @@ export function SparklesBg({ children }) {
                     background="transparent"
                     minSize={0.2}
                     maxSize={1.8}
-                    particleDensity={200}
+                    particleDensity={150}
                     className="w-full h-full"
-                    particleColor="#93C5FD"
+                    particleColor="#2563EB"
                     speed={0.5}
                 />
             </div>

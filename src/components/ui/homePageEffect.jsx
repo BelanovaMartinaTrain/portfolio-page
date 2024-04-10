@@ -30,7 +30,7 @@ export function CanvasRevealEffectDemo3({ children }) {
             key={width}
             ref={revealRef}
             onMouseEnter={() => setIsLoaded(true)}
-            className="z-10 rounded-2xl h-[30rem] sm:h-[40rem] flex flex-row overflow-hidden items-center justify-center bg-black w-full  mx-auto px-2 relative"
+            className="z-10 rounded-2xl h-[30vh] sm:h-[40vh] flex flex-row overflow-hidden items-center justify-center bg-black w-full  mx-auto px-2 relative"
         >
             {children}
             <AnimatePresence>

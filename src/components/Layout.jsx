@@ -5,10 +5,9 @@ import Footer from "./Footer";
 
 function Layout() {
     return (
-        <div className="flex justify-center  bg-black bg-cover bg-no-repeat h-screen w-screen">
-            <div className="p-4 sm:p-10 flex flex-col min-h-[100vh] content-center  max-w-7xl w-full">
+        <div className="flex justify-center  bg-black bg-cover bg-no-repeat h-[99vh] w-[97svw]">
+            <div className="p-4 sm:p-10 flex flex-col h-full content-center  max-w-7xl w-full">
                 <Header />
-                <div className="fixed  mr-24 w-[88vw]  mt-[11rem] h-screen -rotate-10 z-0 ">{/*<StaticLamp />*/}</div>
                 <main className="  sm:mt-8 ">
                     <Outlet />
                 </main>
