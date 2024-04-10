@@ -18,7 +18,7 @@ export function SparklesBg({ children }) {
                 />
             </div>
             <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(70%_90%_at_center,transparent_40%,white)]"></div>
-            <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center font-dmsans tracking-wider text-white relative z-20">{children}</h1>
+            <h1 className="">{children}</h1>
         </div>
     );
 }
