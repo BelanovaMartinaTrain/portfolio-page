@@ -7,11 +7,11 @@ export function Loading() {
     const ref = React.useRef(null);
     const time = useTime();
 
-    const pathLengthFirst = useTransform(time, [0, 5000], [0.2, 1.2]);
-    const pathLengthSecond = useTransform(time, [0, 5000], [0.15, 1.2]);
-    const pathLengthThird = useTransform(time, [0, 5000], [0.1, 1.2]);
-    const pathLengthFourth = useTransform(time, [0, 5000], [0.05, 1.2]);
-    const pathLengthFifth = useTransform(time, [0, 5000], [0, 1.2]);
+    const pathLengthFirst = useTransform(time, [0, 10000], [0.2, 1.2]);
+    const pathLengthSecond = useTransform(time, [0, 10000], [0.15, 1.2]);
+    const pathLengthThird = useTransform(time, [0, 10000], [0.1, 1.2]);
+    const pathLengthFourth = useTransform(time, [0, 10000], [0.05, 1.2]);
+    const pathLengthFifth = useTransform(time, [0, 10000], [0, 1.2]);
 
     console.log(pathLengthFirst, pathLengthThird);
 
