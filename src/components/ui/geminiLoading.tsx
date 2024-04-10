@@ -35,7 +35,7 @@ export const GeminiEffect = ({
                     y="20%"
                     dy={`${"30rem"}`}
                     fill="LightGray"
-                    className="font-dmsans font-medium text-7xl sm:text-6xl md:text-5xl lg:text-[2.5rem] tracking-wider animate-pulse duration-750"
+                    className="font-dmsans font-extralight text-7xl sm:text-6xl md:text-5xl lg:text-[2.5rem] tracking-wider animate-pulse duration-750"
                 >
                     Loading...
                 </text>
