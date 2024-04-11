@@ -14,7 +14,7 @@ export function SparklesBg({ children }) {
                     particleDensity={200}
                     className="w-full h-full"
                     particleColor="#2563EB"
-                    speed={0.5}
+                    speed={1}
                 />
             </div>
             <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(70%_90%_at_center,transparent_40%,white)]"></div>
