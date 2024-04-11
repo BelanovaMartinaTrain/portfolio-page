@@ -14,7 +14,7 @@ function App() {
         // Wait for 10 seconds
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 5000);
+        }, 6000);
 
         return () => clearTimeout(timer);
     }, []);

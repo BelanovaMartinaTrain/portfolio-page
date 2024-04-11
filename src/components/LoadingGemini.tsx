@@ -6,7 +6,7 @@ import { GeminiEffect } from "./ui/geminiLoading";
 export function Loading() {
     const ref = React.useRef(null);
     const time = useTime();
-    const duration = 4000;
+    const duration = 4900;
 
     const pathLengthFirst = useTransform(time, [0, duration], [0.2, 1.2]);
     const pathLengthSecond = useTransform(time, [0, duration], [0.15, 1.2]);
