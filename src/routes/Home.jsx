@@ -1,6 +1,6 @@
 //import { CanvasRevealEffectDemo3 } from "../components/ui/homePageEffect";
 import { useEffect, useState, useRef } from "react";
-import { Button } from "../components/ui/movingBorder";
+import { MovingBorderComponent } from "../components/ui/movingBorder";
 // import { Link } from "react-router-dom";
 import { SparklesBg } from "../components/ui/sparklesBg";
 
@@ -36,7 +36,7 @@ function Home() {
                                     Martina
                                 </span>
                                 . I&apos;m a{" "}
-                                <span className="font-bold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
+                                <span className=" font-bold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
                                     FULLSTACK{" "}
                                 </span>
                                 Web Developer.
@@ -48,9 +48,15 @@ function Home() {
                                         Projects
                                     </Link>
                                 </Button> */}
-                            <Button className="" duration="7000">
+                            <MovingBorderComponent
+                                className="bg-black/[0.1] border border-slate-800 flex items-center justify-center"
+                                duration="7000"
+                                containerClassName="h-[3.25rem] md:h-16 w-28 md:w-40"
+                                borderClassName="opacity-[0.9]"
+                                as="button"
+                            >
                                 CV
-                            </Button>
+                            </MovingBorderComponent>
                             {/* </div> */}
                         </section>
                     </div>

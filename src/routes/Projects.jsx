@@ -1,11 +1,7 @@
-
+import Card from "../components/Card";
 
 function Projects() {
-  
-    return (
-        <h1 className="text-stone-200">This is work stuff</h1>
-    )
-  }
-  
-  export default Projects
-  
+    return <div className="mt-10"></div>;
+}
+
+export default Projects;

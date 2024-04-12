@@ -8,17 +8,7 @@ const transition = {
     ease: "linear",
 };
 
-export const GeminiEffect = ({
-    pathLengths,
-    title,
-    description,
-    className,
-}: {
-    pathLengths: MotionValue[];
-    title?: string;
-    description?: string;
-    className?: string;
-}) => {
+export const GeminiEffect = ({ pathLengths, className }: { pathLengths: MotionValue[]; className?: string }) => {
     return (
         <div className={cn("h-screen top-[50vh] ", className)}>
             <svg

@@ -4,7 +4,7 @@ import { motion, useAnimationFrame, useMotionTemplate, useMotionValue, useTransf
 import { useRef } from "react";
 import { cn } from "../../utils/cn";
 
-export function Button({
+export function MovingBorderComponent({
     borderRadius = "1rem",
     children,
     as: Component = "button",
@@ -25,10 +25,7 @@ export function Button({
 }) {
     return (
         <Component
-            className={cn(
-                "bg-transparent relative  text-base  md:text-xl  tracking-wider h-[3.25rem] md:h-16 w-28 md:w-40 p-[1px] overflow-hidden ",
-                containerClassName
-            )}
+            className={cn("bg-transparent relative  text-base  md:text-xl  tracking-wider  p-[1px] overflow-hidden ", containerClassName)}
             style={{
                 borderRadius: borderRadius,
             }}
@@ -41,10 +38,7 @@ export function Button({
             </div>
 
             <div
-                className={cn(
-                    "relative bg-slate-900/[0.2] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full antialiased",
-                    className
-                )}
+                className={cn("relative   backdrop-blur-xl text-white  w-full h-full antialiased", className)}
                 style={{
                     borderRadius: `calc(${borderRadius} * 0.96)`,
                 }}
