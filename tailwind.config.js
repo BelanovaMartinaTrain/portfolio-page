@@ -18,23 +18,10 @@ export default {
       dropShadow: {
         hoverlight: '0 10px 8px rgba(255, 255, 255, 0.5)'
       },
-      backgroundImage: {
-        'aurora': "url('/public/pexels-stein-egil-liland-5740842.jpg')",
-        'lightsBlurredBig': "url('/public/pexels-rovenimagescom-949587.jpg')",
-        'lightsBlurredSmall': "url('/public/pexels-rovenimagescom-949587 (1).jpg')",
-        'blueTexture': "url('/public/pexels-suzy-hazelwood-1629236.jpg')",
-        'gradientBig': "url('/public/pexels-todd-trapani-2276928.jpg')",
-        'gradientMiddle': "url('/public/pexels-todd-trapani-2276928 middle.jpg')",
-        'gradientSmall': "url('/public/pexels-todd-trapani-2276928 small.jpg')",
-        'paprad': "url('/public/pexels-aedrian-12178646.jpg')",
-        'cafe': "url('/public/pexels-tim-gouw-240225.jpg')",
-        'birdsEye': "url('/public/pexels-tolga-ahmetler-11123025.jpg')",
-        'papradMakka': "url('/public/pexels-samuel-jean-butler-16885359.jpg')",
-        'redLights': "url('/public/pexels-yelena-odintsova-10559023.jpg')",
-        'monstera': "url('/public/pexels-golden-jojo-2409038.jpg')",
-        'blurredLights': "url('/public/pexels-freestocksorg-457713.jpg')",
-        'code': "url('/public/pexels-neo-2653362.jpg')"
-      }
+      screens: {
+        xs: "475px"
+      },
+
     },
 
   },

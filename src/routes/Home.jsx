@@ -32,11 +32,11 @@ function Home() {
 
                             <h1 className="font-extralight sm:p-10 mt-4 mb-6  drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">
                                 My name is{" "}
-                                <span className="font-bold uppercase bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
+                                <span className="font-semibold uppercase bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                                     Martina
                                 </span>
                                 . I&apos;m a{" "}
-                                <span className=" font-bold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
+                                <span className=" font-semibold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
                                     FULLSTACK{" "}
                                 </span>
                                 Web Developer.

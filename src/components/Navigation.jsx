@@ -12,7 +12,7 @@ export default function Navigation({ ulClassName, liClassName }) {
                         className={`${liClassName} ${
                             location.pathname === "/"
                                 ? "font-semibold  bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
-                                : "font-light text-white hover:[letter-spacing:0.012rem]"
+                                : "font-light text-white hover:tracking-wider "
                         } hover:font-semibold `}
                     >
                         HOME
@@ -23,7 +23,7 @@ export default function Navigation({ ulClassName, liClassName }) {
                         className={`${liClassName} ${
                             location.pathname === "/projects"
                                 ? "font-semibold bg-gradient-to-br from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
-                                : "font-light text-white hover:[letter-spacing:0.012rem]"
+                                : "font-light text-white hover:tracking-wider"
                         } hover:font-semibold `}
                     >
                         PROJECTS
@@ -34,7 +34,7 @@ export default function Navigation({ ulClassName, liClassName }) {
                         className={`${liClassName} ${
                             location.pathname === "/journey"
                                 ? "font-semibold bg-gradient-to-br from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
-                                : "font-light text-white hover:[letter-spacing:0.012rem]"
+                                : "font-light text-white hover:tracking-wider"
                         } hover:font-semibold `}
                     >
                         JOURNEY
@@ -45,7 +45,7 @@ export default function Navigation({ ulClassName, liClassName }) {
                         className={`${liClassName} ${
                             location.pathname === "/connect"
                                 ? "font-semibold bg-gradient-to-br from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
-                                : "font-light text-white hover:[letter-spacing:0.012rem]"
+                                : "font-light text-white hover:[letter-spacing:0.055rem]"
                         } hover:font-semibold `}
                     >
                         CONNECT

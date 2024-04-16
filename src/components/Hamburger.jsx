@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 // eslint-disable-next-line react/prop-types
 export default function Hamburger({ hamburgerClass }) {
     const [isOpen, setIsOpen] = useState(false);
-    const ulClassName = "  absolute  z-40 left-0 bg-black bg-opacity-75 w-screen   backdrop-blur-sm  transition-all duration-300  ease-in-out ";
+    const ulClassName = "  absolute   left-0 bg-black bg-opacity-75 w-screen   backdrop-blur-sm  transition-all duration-300  ease-in-out ";
     const liClassName = "  font-normal text-center transition-all duration-300  ease-in origin-top-right ";
     const refMenu = useRef(null);
 
@@ -59,7 +59,7 @@ export default function Hamburger({ hamburgerClass }) {
             <div onClick={() => setIsOpen(false)}>
                 <Navigation
                     ulClassName={`${ulClassName} ${!isOpen ? " h-0  " : "h-[80%]  "}`}
-                    liClassName={`${liClassName} ${!isOpen ? "none opacity-0 text-xs p-0" : " opacity-100 text-xl p-2 "}`}
+                    liClassName={`${liClassName}  ${!isOpen ? "pointer-events-none opacity-0 text-xs p-0" : " opacity-100 text-xl p-2 "}`}
                 />
             </div>
         </div>

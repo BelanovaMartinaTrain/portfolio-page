@@ -31,7 +31,7 @@ export function MovingBorderComponent({
             }}
             {...otherProps}
         >
-            <div className="absolute inset-0" style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}>
+            <div className="absolute inset-0" style={{ borderRadius: `calc(${borderRadius} * 1)` }}>
                 <MovingBorder duration={duration} rx="30%" ry="30%">
                     <div className={cn("h-20 w-20 opacity-[0.9] bg-[radial-gradient(var(--blue-500)_40%,transparent_60%)]", borderClassName)} />
                 </MovingBorder>
@@ -40,7 +40,7 @@ export function MovingBorderComponent({
             <div
                 className={cn("relative   backdrop-blur-xl text-white  w-full h-full antialiased", className)}
                 style={{
-                    borderRadius: `calc(${borderRadius} * 0.96)`,
+                    borderRadius: `calc(${borderRadius} * 0.99)`,
                 }}
             >
                 {children}

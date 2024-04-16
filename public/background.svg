@@ -1,0 +1,12 @@
+<svg  width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+   <rect width="1280" height="720" 
+  fill="#07016e" />
+    <defs>
+    <filter id="f1" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="18" />
+    </filter>
+  
+
+  </defs>
+  <rect width="101%" height="98%" fill="black" filter="url(#f1)" />
+</svg>
