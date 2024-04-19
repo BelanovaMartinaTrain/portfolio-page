@@ -42,7 +42,7 @@ export default function ProjectDetail() {
                                     </li>
                                 ))}
                             </ul>
-                            <div className=" mt-3  grid grid-flow-col">
+                            <div className=" mt-3  grid grid-flow-col lg:grid-flow-row dunno:grid-flow-col">
                                 {links.map((link) => (
                                     <button
                                         key={link.link}
@@ -69,7 +69,7 @@ export default function ProjectDetail() {
                             ref={imgRef}
                             className={`${!imgLoaded && "hidden opacity-0"} ${
                                 projectId === "project-3" ? "border  border-b-blue-600/[0.3]" : ""
-                            } rounded-xl w-[100%] md:w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none ${imageClass}`}
+                            } rounded-xl w-[100%] sm:w-3/4 md:w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none ${imageClass}`}
                         />
 
                         {!imgLoaded && (

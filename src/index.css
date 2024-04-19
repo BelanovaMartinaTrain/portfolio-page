@@ -26,6 +26,11 @@
     transform-origin: bottom left;
   }
 
+  .grid-main-layout {
+    display: grid !important;
+    grid-template-rows: 0.1fr 1fr 0.01fr;
+  }
+
 
 
 

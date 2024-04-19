@@ -19,11 +19,11 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
         }
     }, []);
 
-    const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 6500]), {
+    const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 7500]), {
         stiffness: 500,
         damping: 90,
     });
-    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight]), {
+    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]), {
         stiffness: 500,
         damping: 90,
     });

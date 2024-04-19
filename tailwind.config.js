@@ -19,7 +19,8 @@ export default {
         hoverlight: '0 10px 8px rgba(255, 255, 255, 0.5)'
       },
       screens: {
-        xs: "475px"
+        xs: "475px",
+        dunno: "1045px"
       },
       boxShadow: {
         'test': "inset 0 10px 10px rgba(0,0,0,.075),0 0 5px rgba(59, 130, 246,1)",
