@@ -23,14 +23,14 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
         stiffness: 500,
         damping: 90,
     });
-    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]), {
+    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [50, svgHeight]), {
         stiffness: 500,
         damping: 90,
     });
 
     return (
-        <motion.div ref={ref} className={cn("relative w-full max-w-4xl mx-auto h-full", className)}>
-            <div className="absolute -left-6 md:-left-20 top-3">
+        <motion.div ref={ref} className={cn("relative w-full max-w-4xl mx-auto h-full ", className)}>
+            <div className="absolute -left-8 xs:-left-14 md:-left-18 lg:-left-24 top-3">
                 <motion.div
                     transition={{
                         duration: 0.2,

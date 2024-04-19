@@ -8,13 +8,13 @@ export default function ProjectsNavBar() {
         <div className="">
             <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-2 h-[1px] w-full " />
             <div className="flex flex-col sm:flex-row ">
-                <div className="hidden sm:block px-4 pt-4 mt-6">
+                <div className="hidden lg:block px-4 pt-4 mt-6">
                     <h2
                         className="font-medium xs:text-lg  text-base sm:text-xl md:text-lg lg:text-xl pb-2
                                     hover:drop-shadow-[0px_1px_1px_rgba(255,255,255,0.5)] bg-gradient-to-r
                                     from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent"
                     >
-                        <NavLink to="/projects/">Projects &#x021B0;</NavLink>
+                        <NavLink to="/projects/">Projects </NavLink>
                     </h2>
                     <div className="-ml-14 bg-gradient-to-r from-transparent via-slate-700 to-transparent mb-5 h-[1px] w-[150%] " />
                     {projectData.map((project) => (
@@ -40,7 +40,7 @@ export default function ProjectsNavBar() {
                         </h1>
                     ))}
                 </div>
-                <div className=" sm:w-[75%] sm:pl-20 ">
+                <div className=" lg:w-[75%] pl-4 lg:pl-20 ">
                     <Outlet />
                 </div>
             </div>

@@ -2,36 +2,57 @@ import { TracingBeam } from "../../components/ui/tracing-beam";
 import { useParams } from "react-router-dom";
 import { projectData } from "../../api/data/data";
 import { Link } from "react-router-dom";
+import { IconBrandGithub, IconBrowser } from "@tabler/icons-react";
 
 export default function ProjectDetail() {
     const { id } = useParams();
-    const { id: projectId, title, image, alt, description, imageClass, goals, links, stack } = projectData.filter((project) => project.id === id)[0];
+    const { title, image, alt, description, imageClass, goals, links, stack } = projectData.filter((project) => project.id === id)[0];
 
     return (
         <>
-            <TracingBeam className="px-8 sm:px-6 h-screen">
-                <div className="sm:mt-4">
+            <TracingBeam className="px-5 lg:px-6 h-screen ">
+                <div className="md:mt-4">
                     <h2 className=" font-medium xs:text-lg text-center text-base sm:text-xl md:text-xl lg:text-2xl flex justify-center pt-4 pb-10 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                         {title}{" "}
                     </h2>
-                    <div className="grid grid-flow-col  gap-4 grid-cols-9 mb-10 ">
-                        <div className="grid col-span-2 py-2">
-                            <ul className="text-white list-disc list-inside ">
+                    <div className="grid grid-flow-row grid-cols-1 md:grid-flow-col gap-y-2  md:grid-cols-10 mb-10  ">
+                        <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2  md:order-none  ">
+                            <h3 className="pb-2">Tech Stack:</h3>
+                            <ul className="text-white  list-inside grid grid-flow-row  grid-cols-2  gap-x-6 md:py-1">
                                 {stack.map((stack) => (
-                                    <li key={stack}>{stack}</li>
+                                    <li key={stack} className="border-slate-600 rounded-md px-2 py-[0.1rem] align-middle border w-fit my-1">
+                                        {stack}
+                                    </li>
                                 ))}
                             </ul>
-                            <div className="text-white pb-4 pt-3 grid ">
+                            <div className=" mt-3  ">
                                 {links.map((link) => (
-                                    <Link to={link.link} target="_blank" key={link.link} className="border rounded-lg my-2 p-1 text-center">
-                                        {link.text}
-                                    </Link>
+                                    <button
+                                        key={link.link}
+                                        className=" min-w-[40%] rounded-lg border flex justify-center bg-slate-950 border-blue-500 my-2 px-4 py-1 text-center mx-2 hover:shadow-effect "
+                                    >
+                                        {link.text === "Github" ? (
+                                            <IconBrandGithub className="h-4 w-4 mt-1 mr-1" />
+                                        ) : link.text === "Live site" ? (
+                                            <IconBrowser className="h-4 w-4 mt-1 mr-1" />
+                                        ) : (
+                                            ""
+                                        )}
+                                        <Link to={link.link} target="_blank" tabIndex={-1}>
+                                            {link.text}
+                                        </Link>
+                                    </button>
                                 ))}
                             </div>
                         </div>
-                        <img src={image} alt={alt} width="80%" className={`rounded-xl col-span-7 place-self-end self-start  ${imageClass}`} />
+                        <img
+                            src={image}
+                            alt={alt}
+                            className={`rounded-xl w-[100%] md:w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none ${imageClass}`}
+                        />
                     </div>
-                    <div className="">{description}</div>
+                    <div className="pb-6">{description}</div>
+                    <h3 className="pb-2">Learning goals:</h3>
                     <ul className="text-white list-disc list-inside mb-4">
                         {goals.map((goal) => (
                             <li key={goal}>{goal}</li>
