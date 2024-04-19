@@ -1,4 +1,4 @@
-import TestPage from "../components/testPage";
+import TestPage from "../components/TestPage";
 
 function Journey() {
     return (
