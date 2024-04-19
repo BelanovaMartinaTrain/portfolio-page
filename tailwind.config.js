@@ -20,7 +20,8 @@ export default {
       },
       screens: {
         xs: "475px",
-        dunno: "1045px"
+        dunno: "1045px",
+        xxs: "340px"
       },
       boxShadow: {
         'test': "inset 0 10px 10px rgba(0,0,0,.075),0 0 5px rgba(59, 130, 246,1)",

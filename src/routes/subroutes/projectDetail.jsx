@@ -22,7 +22,7 @@ export default function ProjectDetail() {
 
     return (
         <>
-            <TracingBeam className="px-5 lg:px-6 h-screen ">
+            <TracingBeam className="px-5 lg:px-6 h-full ">
                 <div className="md:mt-4">
                     <h2 className=" font-medium xs:text-lg text-center text-base sm:text-xl md:text-xl lg:text-2xl flex justify-center pt-4 pb-10 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                         {title}{" "}
@@ -31,11 +31,11 @@ export default function ProjectDetail() {
                     <div className="grid grid-flow-row grid-cols-1 md:grid-flow-col gap-y-2  md:grid-cols-10 mb-10  ">
                         <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-4 md:mt-0 md:order-none  ">
                             <h3 className="">Tech Stack:</h3>
-                            <ul className="text-white  list-inside grid grid-flow-row  grid-cols-2 mb-[5%] gap-x-4 md:py-1">
+                            <ul className="text-white   grid grid-flow-row grid-cols-1 xxs:grid-cols-2 mb-[5%] gap-x-4 md:py-1">
                                 {stack.map((stack) => (
                                     <li
                                         key={stack}
-                                        className="border-slate-600 rounded-md px-2 py-1 
+                                        className="border-slate-600 rounded-md px-2 py-1 whitespace-nowrap
                                         my-1 flex justify-center self-center align-middle text-center border w-fit "
                                     >
                                         {stack}
@@ -82,7 +82,7 @@ export default function ProjectDetail() {
                     </div>
                     <div className="pb-6">{description}</div>
                     <h3 className="pb-2">Learning goals:</h3>
-                    <ul className="text-white list-disc list-inside mb-4">
+                    <ul className="text-white list-disc list-outside pl-4 pb-4">
                         {goals.map((goal) => (
                             <li key={goal}>{goal}</li>
                         ))}

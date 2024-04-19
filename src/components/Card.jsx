@@ -26,7 +26,7 @@ export default function Card({ props }) {
             as="div"
         >
             <NavLink to={props.id}>
-                <div className="relative group  h-full rounded-2xl  target:h-[85vh] hover:shadow-effect  hover:border border-blue-500  transition-shadow  duration-200">
+                <div className="relative group  h-full rounded-2xl   hover:shadow-effect  hover:border border-blue-500  transition-shadow  duration-200">
                     <div className="grid  rounded-2xl md:grid-flow-row md:grid-col-1 gap-0 justify-around  ">
                         <img
                             ref={imgRef}
@@ -37,7 +37,7 @@ export default function Card({ props }) {
                         />
                         {!imgLoaded && <SkeletonImage imgClass={`w-full block `} />}
 
-                        <h2 className="group/link rounded-2xl font-medium xs:text-lg text-center text-base sm:text-xl md:text-lg lg:text-xl flex justify-center font-dmsans  my-3  bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
+                        <h2 className="group/link min-h-fit rounded-2xl font-medium xs:text-lg xxs:text-base text-center text-xs sm:text-xl md:text-lg lg:text-xl flex justify-center font-dmsans  my-1  xs:my-3 md:my-1 lg:my-3 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                             {props.title}{" "}
                         </h2>
 
