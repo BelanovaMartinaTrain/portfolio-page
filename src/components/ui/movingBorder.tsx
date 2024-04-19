@@ -40,7 +40,7 @@ export function MovingBorderComponent({
             <div
                 className={cn("relative   backdrop-blur-xl text-white  w-full h-full antialiased", className)}
                 style={{
-                    borderRadius: `calc(${borderRadius} * 0.99)`,
+                    borderRadius: `calc(${borderRadius} * 0.96)`,
                 }}
             >
                 {children}

@@ -6,7 +6,7 @@ import Footer from "./Footer";
 function Layout() {
     return (
         <>
-            <div className="flex justify-center  bg-black  h-screen w-screen ">
+            <div className="flex justify-center  bg-black font-dmsans h-screen w-screen ">
                 <div className="p-4 xs:p-8 sm:p-10 flex flex-col h-full content-center  max-w-7xl w-full">
                     <Header />
                     <main className="  sm:mt-4 ">

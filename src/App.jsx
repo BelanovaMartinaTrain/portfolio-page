@@ -6,12 +6,14 @@ import Journey from "./routes/Journey";
 import Connect from "./routes/Connect";
 import { useState, useEffect } from "react";
 import LoadingPage from "./components/Loading";
+import ProjectDetail from "./routes/subroutes/projectDetail";
+import ProjectsNavBar from "./routes/subroutes/projectsNavbar";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Wait for 10 seconds
+        // Wait for 8 seconds
         const timer = setTimeout(() => {
             setIsLoading(false);
         }, 8000);
@@ -25,9 +27,12 @@ function App() {
         <Routes>
             <Route element={<Layout />}>
                 <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/journey" element={<Journey />} />
-                <Route path="/connect" element={<Connect />} />
+                <Route path="projects" element={<Projects />} />
+                <Route path="projects/:id" element={<ProjectsNavBar />}>
+                    <Route index element={<ProjectDetail />} />
+                </Route>
+                <Route path="journey" element={<Journey />} />
+                <Route path="connect" element={<Connect />} />
             </Route>
         </Routes>
     );

@@ -1,7 +1,9 @@
+import { SignupFormDemo } from "../components/Form";
+
 function Connect() {
     return (
         <>
-            <h1 className="text-stone-200">We can connect here</h1>
+            <SignupFormDemo />
         </>
     );
 }

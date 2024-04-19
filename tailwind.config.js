@@ -21,6 +21,10 @@ export default {
       screens: {
         xs: "475px"
       },
+      boxShadow: {
+        'test': "inset 0 10px 10px rgba(0,0,0,.075),0 0 5px rgba(59, 130, 246,1)",
+        'effect': "0 0 10px rgba(30,64,175,1)"
+      }
 
     },
 
