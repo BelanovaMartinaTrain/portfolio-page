@@ -2,7 +2,8 @@ export const projectData = [
     {
         id: "project-1",
         title: "Aurora Forecast website",
-        description: "Website to display data needed to forecast Northern lights",
+        description:
+            "Website which displays data needed to forecast Northern lights. It has some interactive parts like unit switchers and modals with detailed information. ",
         image: "/nahlad.png",
         alt: "screenshot of the website",
         goals: [
@@ -47,10 +48,10 @@ export const projectData = [
         id: "project-3",
         title: "My portfolio page",
         description:
-            "I created a portfolio page to present my personal projects created during the continuous learning process. It provides CV, contact form, list of projects courses and tutorials ",
+            "My personal portfolio page to present my projects I worked on during the continuous learning process. It provides CV, contact form and lists of projects, courses and tutorials ",
         image: "/portfolio-screenshot.jpg",
         alt: "my portfolio webpage screenshot",
-        goals: ["Playing with framer-motion", "Trying tricks and features of Tailwind", "React Router 6", "Implement classic React hooks"],
+        goals: ["Playing with framer-motion", "Trying tricks and features of Tailwind", "React Router 6", "Implementation of classic React hooks"],
         stack: ["React", "Javascript", "Framer motion", "Tailwind", "HTML", "CSS"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecast" }],
         imageClass: "group-hover:opacity-40 opacity-100 border border-t-blue-600/[0.2] border-x-blue-600/[0.3] border-b-transparent",
@@ -64,6 +65,7 @@ export const projectData = [
         goals: [
             "Node JS backend server setup",
             "Express JS framework",
+            "API endpoints setup",
             "Data manipulation",
             "REDIS",
             "Time limit for API calls and data storage",
