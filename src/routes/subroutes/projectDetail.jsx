@@ -103,7 +103,13 @@ export default function ProjectDetail() {
                                 ))}
                             </ul>
                         </div>
-                        <img src={lighthouse} alt="lighthouse tool stats" className="  mt-10 shadow-decor rounded-xl w-full md:w-[50%]  filter  " />
+                        {lighthouse && (
+                            <img
+                                src={lighthouse}
+                                alt="lighthouse tool stats"
+                                className="  mt-10 shadow-decor rounded-xl w-full md:w-[50%]  filter  "
+                            />
+                        )}
                     </div>
                 </div>
             </TracingBeam>
