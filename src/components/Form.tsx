@@ -6,25 +6,27 @@ import { TextArea } from "./ui/textarea";
 import { cn } from "../utils/cn";
 import { IconBrandGithub, IconBrandGoogle, IconBrandReact, IconBrandNodejs } from "@tabler/icons-react";
 
-export function SignupFormDemo() {
+export function ContactFormDemo() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form submitted");
     };
     return (
         <div className="max-w-5xl w-full font-dmsans mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black">
-            <h2 className="font-bold text-xl text-neutral-200">Let's connect!</h2>
-            <p className=" text-sm max-w-sm mt-2 text-neutral-300">Send me your message or check out my profiles:</p>
+            <h2 className="font-medium text-2xl text-neutral-200">Let's connect!</h2>
+            <p className=" text-base max-w-sm mt-2 text-neutral-300">Send me your message or check out my profiles:</p>
 
             <form className="my-8" onSubmit={handleSubmit}>
-                <LabelInputContainer className="mb-4">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Name" type="text" />
-                </LabelInputContainer>
-                <LabelInputContainer className="mb-4">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" placeholder="email@email.com" type="email" />
-                </LabelInputContainer>
+                <div className="flex flex-wrap md:flex-nowrap gap-x-4">
+                    <LabelInputContainer className="mb-4">
+                        <Label htmlFor="name">Name</Label>
+                        <Input id="name" placeholder="Name" type="text" />
+                    </LabelInputContainer>
+                    <LabelInputContainer className="mb-4">
+                        <Label htmlFor="email">Email</Label>
+                        <Input id="email" placeholder="email@email.com" type="email" />
+                    </LabelInputContainer>
+                </div>
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="subject">Subject</Label>
                     <Input id="subject" placeholder="Job Interview" type="text" />
@@ -34,14 +36,15 @@ export function SignupFormDemo() {
 
                     <TextArea id="message" placeholder="Write your message..." className="resize  h-20 w-full " />
                 </LabelInputContainer>
-
-                <button
-                    className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-                    type="submit"
-                >
-                    Send &#x2709;
-                    <BottomGradient />
-                </button>
+                <div className="  w-full sm:flex sm:justify-end">
+                    <button
+                        className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 w-full sm:w-1/4 bg-zinc-800  text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                        type="submit"
+                    >
+                        Send &#x2709;
+                        <BottomGradient />
+                    </button>
+                </div>
 
                 <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 

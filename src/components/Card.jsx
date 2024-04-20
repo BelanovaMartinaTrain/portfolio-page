@@ -22,7 +22,7 @@ export default function Card({ props }) {
             containerClassName=" md:h-full  p-[1px] mx-auto group/border hover:overflow-visible transition-all duration-500 md:col-span-4 lg:col-span-5  w-full aspect-[1.4/1]"
             duration={10000}
             className="bg-slate-950 w-full rounded-md "
-            borderClassName="w-[50vw] h-[50vh] group-hover/border:w-0 group-hover/border:h-0 opacity-[0.9] rounded-md group-hover/border:opacity-0 "
+            borderClassName="w-[50vw] h-[50vh] group-hover/border:w-0 group-hover/border:h-0 opacity-[0.9] rounded-md xs:group-hover/border:opacity-0 "
             as="div"
         >
             <NavLink to={props.id}>
@@ -33,7 +33,7 @@ export default function Card({ props }) {
                             src={props.image}
                             className={`${
                                 !imgLoaded ? "opacity-0" : `${props.imageClass}`
-                            } w-full group-hover:blur-sm transition ease-in-out duration-500  rounded-t-[0.95rem] `}
+                            } w-full xs:group-hover:blur-sm transition ease-in-out duration-500  rounded-t-[0.95rem] `}
                         />
                         {!imgLoaded && <SkeletonImage imgClass={`w-full block `} />}
 
@@ -41,13 +41,15 @@ export default function Card({ props }) {
                             {props.title}{" "}
                         </h2>
 
-                        <div className="font-light  w-full font-dmsans mt-1 px-6 py-2 absolute transition-opacity ease-in-out duration-300 opacity-0 group-hover:opacity-100">
-                            <h3 className="mb-1 text-lg ">Tech Stack:</h3>
-                            <ul className=" mt-2 list-disc list-outside text-base leading-5 ml-5 grid grid-flow-row grid-cols-1  ">
+                        <div className="font-light grid justify-center  w-full font-dmsans mt-1 p-4 lg:p-10 absolute transition-opacity ease-in-out duration-300 opacity-0 xs:group-hover:opacity-100">
+                            <h3 className="text-xs lg:text-base ">{props.description}</h3>
+                            <div className="mt-2 lg:mt-5  text-xs lg:text-base  leading-5 ml-5 flex flex-wrap  ">
                                 {props.stack.map((stack, index) => (
-                                    <li key={`goal-${index}`}>{stack}</li>
+                                    <div key={`goal-${index}`} className="border m-[0.2rem] px-[0.3rem] lg:p-1 lg:px-2 rounded-xl">
+                                        {stack}
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

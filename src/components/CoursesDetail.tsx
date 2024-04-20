@@ -12,12 +12,12 @@ export default function CoursesList() {
                     <div key={course.id} className="mb-10 ">
                         <p
                             className="border-blue-700 rounded-xl px-2 py-0 whitespace-nowrap
-                            my-1 r border w-fit text-blue-400 text-[0.8rem]"
+                            my-1 r border w-fit text-blue-400 text-[0.8rem] "
                         >
                             {course.platform}
                         </p>
                         <Link to={course.link} target="_blank" tabIndex={-1}>
-                            <h2 className=" text-xl text-slate-100 mb-4 font-dmsans mt-2 flex hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
+                            <h2 className=" text-xl text-slate-100 mb-4  font-dmsans mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
                                 {course.title}{" "}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function CoursesList() {
                                 </svg>
                             </h2>
                         </Link>
-                        <div className="text-sm  prose prose-sm prose-invert">{course.description}</div>
+                        <div className="text-sm  prose prose-sm prose-invert ">{course.description}</div>
                         <div className="mt-2 text-sm text-blue-400">{course.duration}</div>
                         <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-2 md:mt-0 md:order-none  ">
                             <h3 className="text-lg text-slate-400 mt-3">Learning Stack:</h3>

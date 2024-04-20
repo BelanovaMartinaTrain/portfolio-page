@@ -5,9 +5,9 @@ export const projectData = [
         id: "project-1",
         title: "Aurora Forecast website",
         description:
-            "Website which displays data needed to forecast Northern lights. It has some interactive parts like unit switchers and modals with detailed information. ",
-        image: "/nahlad.png",
-        alt: "screenshot of the website",
+            "Website which displays data needed to forecast Northern lights. It has interactive parts like unit switchers and modals with detailed information. ",
+        image: "/nahlad2.jpg",
+        alt: "screenshot of the aurora forecast website",
         goals: [
             "Front-end Typescript",
             "Server Components",
@@ -24,33 +24,35 @@ export const projectData = [
             { text: "Live site", link: "https://auroraforecast.online" },
             { text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecastFrontend" },
         ],
-        imageClass: "group-hover:opacity-40 opacity-100",
+        imageClass: "xs:group-hover:opacity-40 opacity-100",
     },
     {
         id: "project-2",
         title: "Backend Data server",
-        description: "Backend server to provide data obtained from public APIs created to conserve public API calls and cache data in Redis",
+        description:
+            "Backend server to provide data obtained from public APIs created to conserve public API calls and cache data in Redis. It provides data to Aurora Forecast website.",
         image: "/server.jpg",
         alt: "server closeup",
         goals: [
             "Back-end Typescript :)",
             "Node JS backend server setup",
+            "API endpoints",
             "Express JS framework",
             "Data manipulation",
             "REDIS",
-            "Time limit for API calls and data storage",
+            "Time limit for API calls and serving data from REDIS storage",
             "Docker deploy",
             "VPS setup with load balancer",
         ],
         stack: ["Node JS", "Express", "Typescript", "REDIS", "Docker", "Ubuntu", "Digital Ocean", "ES6"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecast" }],
-        imageClass: "group-hover:opacity-10 opacity-50",
+        imageClass: "xs:group-hover:opacity-10 opacity-50",
     },
     {
         id: "project-3",
         title: "My portfolio page",
         description:
-            "My personal portfolio page to present my projects I worked on during the continuous learning process. It provides CV, contact form and lists of projects, courses and tutorials ",
+            "My personal portfolio page to present my projects I worked on during the continuous learning process. It provides CV, contact form and lists of projects, courses and tutorials. ",
         image: "/portfolio-screenshot.jpg",
         alt: "my portfolio webpage screenshot",
         goals: [
@@ -62,7 +64,7 @@ export const projectData = [
         ],
         stack: ["React", "Javascript", "Framer motion", "Tailwind", "HTML", "CSS"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecast" }],
-        imageClass: "group-hover:opacity-40 opacity-100 border border-t-blue-600/[0.2] border-x-blue-600/[0.3] border-b-transparent",
+        imageClass: "xs:group-hover:opacity-40 opacity-100 border border-t-blue-600/[0.2] border-x-blue-600/[0.3] border-b-transparent",
     },
     {
         id: "project-5",
@@ -85,7 +87,7 @@ export const projectData = [
                 link: "https://github.com/BelanovaMartinaTrain/python-script",
             },
         ],
-        imageClass: "group-hover:opacity-30 opacity-50",
+        imageClass: "xs:group-hover:opacity-30 opacity-50",
     },
     {
         id: "project-4",
@@ -107,7 +109,7 @@ export const projectData = [
                 link: "https://giphy.com/gifs/rickroll-rick-astley-never-gonna-give-you-up-Vuw9m5wXviFIQ",
             },
         ],
-        imageClass: "group-hover:opacity-40 opacity-80",
+        imageClass: "xs:group-hover:opacity-40 opacity-80",
     },
 ] as const;
 

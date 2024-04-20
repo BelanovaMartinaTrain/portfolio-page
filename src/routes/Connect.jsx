@@ -1,9 +1,9 @@
-import { SignupFormDemo } from "../components/Form";
+import { ContactFormDemo } from "../components/Form";
 
 function Connect() {
     return (
         <>
-            <SignupFormDemo />
+            <ContactFormDemo />
         </>
     );
 }

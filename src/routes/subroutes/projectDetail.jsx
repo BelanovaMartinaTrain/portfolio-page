@@ -31,12 +31,12 @@ export default function ProjectDetail() {
                     <div className="grid grid-flow-row grid-cols-1 md:grid-flow-col gap-y-2  md:grid-cols-10 mb-10  ">
                         <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-4 md:mt-0 md:order-none  ">
                             <h3 className="text-lg text-slate-200">Tech Stack:</h3>
-                            <ul className="text-slate-300 flex flex-wrap   mb-[5%] gap-x-4 md:py-1">
+                            <ul className="text-slate-300 flex flex-wrap   mb-[5%] gap-x-2 pr-4">
                                 {stack.map((stack) => (
                                     <li
                                         key={stack}
-                                        className="border-slate-600 rounded-md px-2 py-1 whitespace-nowrap
-                                        my-1 flex justify-center self-center align-middle text-center border w-fit "
+                                        className="border-slate-600 rounded-xl px-2 py-[0.2rem] whitespace-nowrap
+                                         flex justify-center self-center align-middle text-center border w-fit my-1"
                                     >
                                         {stack}
                                     </li>
@@ -44,9 +44,12 @@ export default function ProjectDetail() {
                             </ul>
                             <div className=" mt-3  grid grid-flow-col lg:grid-flow-row dunno:grid-flow-col">
                                 {links.map((link) => (
-                                    <button
+                                    <Link
+                                        to={link.link}
                                         key={link.link}
-                                        className=" max-w-[9rem] min-w-6 mr-2 rounded-lg border max-h-[2.2rem] whitespace-nowrap flex justify-center bg-slate-950 border-blue-500 my-2 px-4 py-1 text-center  hover:shadow-effect "
+                                        target="_blank"
+                                        tabIndex={-1}
+                                        className="  max-w-[9rem] transition ease-in-out hover:-translate-y-[0.05rem] min-w-6 mr-2 rounded-lg border max-h-[2.2rem] whitespace-nowrap flex justify-center bg-slate-950 border-blue-500 my-2 px-4 py-1 text-center  hover:shadow-effect w-full"
                                     >
                                         {link.text === "Github" ? (
                                             <IconBrandGithub className="h-4 w-4 mt-1 mr-1" />
@@ -55,10 +58,9 @@ export default function ProjectDetail() {
                                         ) : (
                                             ""
                                         )}
-                                        <Link to={link.link} target="_blank" tabIndex={-1}>
-                                            {link.text}
-                                        </Link>
-                                    </button>
+
+                                        {link.text}
+                                    </Link>
                                 ))}
                             </div>
                         </div>
@@ -75,14 +77,14 @@ export default function ProjectDetail() {
                         {!imgLoaded && (
                             <SkeletonImage
                                 imgClass={
-                                    "rounded-xl w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none"
+                                    "shadow-decor rounded-xl w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none"
                                 }
                             />
                         )}
                     </div>
-                    <div className="text-slate-300 pb-6">{description}</div>
-                    <h3 className="pb-2 text-slate-300">{projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}</h3>
-                    <ul className=" list-disc list-outside pl-4 pb-4 text-slate-400">
+                    <div className="text-slate-50 pb-6">{description}</div>
+                    <h3 className="pb-2 text-slate-200">{projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}</h3>
+                    <ul className=" list-disc list-outside pl-4 pb-4 text-slate-300">
                         {goals.map((goal) => (
                             <li key={goal}>{goal}</li>
                         ))}
