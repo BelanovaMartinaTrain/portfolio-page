@@ -25,6 +25,7 @@ export const projectData = [
             { text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecastFrontend" },
         ],
         imageClass: "xs:group-hover:opacity-40 opacity-100",
+        lighthouse: "/lighthouse.jpg",
     },
     {
         id: "project-2",
@@ -47,6 +48,7 @@ export const projectData = [
         stack: ["Node JS", "Express", "Typescript", "REDIS", "Docker", "Ubuntu", "Digital Ocean", "ES6"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecast" }],
         imageClass: "xs:group-hover:opacity-10 opacity-50",
+        lighthouse: "",
     },
     {
         id: "project-3",
@@ -87,7 +89,8 @@ export const projectData = [
                 link: "https://github.com/BelanovaMartinaTrain/python-script",
             },
         ],
-        imageClass: "xs:group-hover:opacity-30 opacity-50",
+        imageClass: "xs:group-hover:opacity-20 opacity-80",
+        lighthouse: "",
     },
     {
         id: "project-4",
@@ -110,6 +113,7 @@ export const projectData = [
             },
         ],
         imageClass: "xs:group-hover:opacity-40 opacity-80",
+        lighthouse: "",
     },
 ] as const;
 
