@@ -57,7 +57,7 @@ export const projectData = [
     },
     {
         id: "project-4",
-        title: "TBD",
+        title: "Future project",
         description: "Backend server to provide data obtained from public APIs created to conserve public API calls and cache data in Redis",
         image: "/server.jpg",
         alt: "server closeup",

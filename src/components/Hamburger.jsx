@@ -35,7 +35,7 @@ export default function Hamburger({ hamburgerClass }) {
     }, []);
 
     return (
-        <div className={`${hamburgerClass} md:sr-only ${isOpen ? " rounded grid-flow-col" : ""} `} ref={refMenu}>
+        <div className={`${hamburgerClass} md:hidden ${isOpen ? " rounded grid-flow-col" : ""} `} ref={refMenu}>
             <button
                 onClick={handleClick}
                 className="flex flex-col justify-center items-center  relative h-8 "
@@ -60,6 +60,8 @@ export default function Hamburger({ hamburgerClass }) {
                 <Navigation
                     ulClassName={`${ulClassName} ${!isOpen ? " h-0  " : "h-[80%]  "}`}
                     liClassName={`${liClassName}  ${!isOpen ? "pointer-events-none opacity-0 text-xs p-0" : " opacity-100 text-xl p-2 "}`}
+                    submenuClassName={`${liClassName}  ${!isOpen ? "pointer-events-none opacity-0 text-xs p-0" : " opacity-100 text-lg p-0 "}`}
+                    submenu={true}
                 />
             </div>
         </div>

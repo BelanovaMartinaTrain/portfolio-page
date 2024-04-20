@@ -14,14 +14,14 @@ function Header() {
 
                 <Navigation
                     ulClassName={
-                        "sr-only md:not-sr-only text-sm [450px]:text-base sm:w-1/2 font-dmsans  md:text-[1.3rem] text-stone-100 flex sm:flex-row sm:justify-around mt-4 justify-center"
+                        "hidden md:flex text-sm [450px]:text-base sm:w-1/2 font-dmsans  md:text-[1.3rem] text-stone-100 flex md:flex-row md:justify-around mt-4 justify-center"
                     }
                     liClassName={"ml-6 sm:ml-4 lg:ml-8  "}
+                    submenuClassName={""}
+                    submenu={false}
                 />
 
-                <Hamburger>
-                    <Navigation ulClassName={""} liClassName={""} />
-                </Hamburger>
+                <Hamburger />
             </nav>
         </header>
     );

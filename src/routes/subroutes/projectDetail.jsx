@@ -46,7 +46,7 @@ export default function ProjectDetail() {
                                 {links.map((link) => (
                                     <button
                                         key={link.link}
-                                        className=" max-w-[9rem] min-w-6 mr-2 rounded-lg border max-h-[2.2rem] flex justify-center bg-slate-950 border-blue-500 my-2 px-4 py-1 text-center  hover:shadow-effect "
+                                        className=" max-w-[9rem] min-w-6 mr-2 rounded-lg border max-h-[2.2rem] whitespace-nowrap flex justify-center bg-slate-950 border-blue-500 my-2 px-4 py-1 text-center  hover:shadow-effect "
                                     >
                                         {link.text === "Github" ? (
                                             <IconBrandGithub className="h-4 w-4 mt-1 mr-1" />
