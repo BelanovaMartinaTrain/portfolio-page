@@ -22,7 +22,7 @@ export default function ProjectDetail() {
 
     return (
         <>
-            <TracingBeam className="px-5 lg:px-6 h-full mb-[50%]">
+            <TracingBeam className="px-5 lg:px-6 h-full mb-[10%]">
                 <div className="md:mt-4">
                     <h2 className=" font-medium text-xl xxs:text-2xl  text-center    lg:text-3xl flex justify-center pt-4 pb-6 md:pb-10 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                         {title}{" "}
