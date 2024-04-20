@@ -25,7 +25,8 @@ export default {
       },
       boxShadow: {
         'test': "inset 0 10px 10px rgba(0,0,0,.075),0 0 5px rgba(59, 130, 246,1)",
-        'effect': "0 0 10px rgba(30,64,175,1)"
+        'effect': "0 0 10px rgba(30,64,175,1)",
+        'decor': "-200px 200px 1000px rgba(30,64,175,0.4)",
       },
       aspectRatio: {
         'img': '1.64 / 1'

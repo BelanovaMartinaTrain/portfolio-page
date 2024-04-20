@@ -22,7 +22,7 @@ export default function ProjectDetail() {
 
     return (
         <>
-            <TracingBeam className="px-5 lg:px-6 h-full ">
+            <TracingBeam className="px-5 lg:px-6 h-full mb-[50%]">
                 <div className="md:mt-4">
                     <h2 className=" font-medium text-xl xxs:text-2xl  text-center    lg:text-3xl flex justify-center pt-4 pb-6 md:pb-10 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                         {title}{" "}
@@ -30,8 +30,8 @@ export default function ProjectDetail() {
 
                     <div className="grid grid-flow-row grid-cols-1 md:grid-flow-col gap-y-2  md:grid-cols-10 mb-10  ">
                         <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-4 md:mt-0 md:order-none  ">
-                            <h3 className="">Tech Stack:</h3>
-                            <ul className="text-white   grid grid-flow-row grid-cols-1 xxs:grid-cols-2 mb-[5%] gap-x-4 md:py-1">
+                            <h3 className="text-lg text-slate-200">Tech Stack:</h3>
+                            <ul className="text-slate-300 flex flex-wrap   mb-[5%] gap-x-4 md:py-1">
                                 {stack.map((stack) => (
                                     <li
                                         key={stack}
@@ -68,8 +68,8 @@ export default function ProjectDetail() {
                             alt={alt}
                             ref={imgRef}
                             className={`${!imgLoaded && "hidden opacity-0"} ${
-                                projectId === "project-3" ? "border  border-b-blue-600/[0.3]" : ""
-                            } rounded-xl w-[100%] sm:w-3/4 md:w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none ${imageClass}`}
+                                projectId === "project-3" ? "border  border-b-blue-600/[0.4]" : ""
+                            } shadow-decor rounded-xl w-[100%] sm:w-3/4 md:w-[100%] md:col-span-6 md:col-start-5  place-self-center self-center md:place-self-end md:self-start order-1 md:order-none ${imageClass}`}
                         />
 
                         {!imgLoaded && (
@@ -80,9 +80,9 @@ export default function ProjectDetail() {
                             />
                         )}
                     </div>
-                    <div className="pb-6">{description}</div>
-                    <h3 className="pb-2">Learning goals:</h3>
-                    <ul className="text-white list-disc list-outside pl-4 pb-4">
+                    <div className="text-slate-300 pb-6">{description}</div>
+                    <h3 className="pb-2 text-slate-300">{projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}</h3>
+                    <ul className=" list-disc list-outside pl-4 pb-4 text-slate-400">
                         {goals.map((goal) => (
                             <li key={goal}>{goal}</li>
                         ))}

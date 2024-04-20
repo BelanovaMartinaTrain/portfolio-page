@@ -19,7 +19,7 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
         }
     }, []);
 
-    const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 7500]), {
+    const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [50, svgHeight + 4000]), {
         stiffness: 500,
         damping: 90,
     });
@@ -30,29 +30,7 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
 
     return (
         <motion.div ref={ref} className={cn("relative w-full max-w-4xl mx-auto h-full ", className)}>
-            <div className="absolute -left-8 xs:-left-14 md:-left-18 lg:-left-24 top-3">
-                <motion.div
-                    transition={{
-                        duration: 0.2,
-                        delay: 0.5,
-                    }}
-                    animate={{
-                        boxShadow: scrollYProgress.get() > 0 ? "none" : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                    }}
-                    className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
-                >
-                    <motion.div
-                        transition={{
-                            duration: 0.2,
-                            delay: 0.5,
-                        }}
-                        animate={{
-                            backgroundColor: scrollYProgress.get() > 0 ? "white" : "var(--blue-500)",
-                            borderColor: scrollYProgress.get() > 0 ? "white" : "var(--blue-600)",
-                        }}
-                        className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
-                    />
-                </motion.div>
+            <div className="absolute -left-8 xs:-left-14 md:-left-18 lg:-left-18 top-3">
                 <svg
                     viewBox={`0 0 20 ${svgHeight}`}
                     width="20"
