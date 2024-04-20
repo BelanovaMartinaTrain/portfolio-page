@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function CoursesList() {
     return (
-        <TracingBeam className="px-6 mt-2 mb-[10%]">
+        <TracingBeam className="ml-4 lg:mx-auto px-6 mt-2 mb-[10%]">
             <div className="max-w-2xl mx-auto antialiased pt-4 relative last:mb-[100px]">
                 {coursesList.map((course) => (
                     <div key={course.id} className="mb-10 ">

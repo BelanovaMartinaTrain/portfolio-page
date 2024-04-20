@@ -9,6 +9,7 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
         target: ref,
         offset: ["start start", "end start"],
     });
+    let y1Num = 2000;
 
     const contentRef = useRef<HTMLDivElement>(null);
     const [svgHeight, setSvgHeight] = useState(0);
@@ -26,18 +27,20 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
         }
     }, []);
 
-    const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [0, svgHeight + 2000]), {
-        stiffness: 500,
-        damping: 90,
-    });
-    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [0, windowHeight + 200]), {
-        stiffness: 500,
-        damping: 90,
-    });
+    if (svgHeight && windowHeight && svgHeight > windowHeight && svgHeight - windowHeight < 300) {
+        y1Num = 3500;
+    } else {
+        y1Num = 2000;
+    }
 
-    console.log(svgHeight);
-    console.log(windowHeight);
-    console.log(scrollYProgress.get());
+    const y1 = useSpring(useTransform(scrollYProgress, [0, 0.8], [0, svgHeight + y1Num]), {
+        stiffness: 500,
+        damping: 90,
+    });
+    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [0, svgHeight + 200]), {
+        stiffness: 500,
+        damping: 90,
+    });
 
     return (
         <motion.div ref={ref} className={cn("relative w-full max-w-4xl mx-auto h-full ", className)}>
@@ -74,8 +77,8 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
                             gradientUnits="userSpaceOnUse"
                             x1="0"
                             x2="0"
-                            y1={svgHeight < windowHeight ? windowHeight : y1} // set y1 for gradient
-                            y2={y2} // set y2 for gradient
+                            y1={y1} // set y1 for gradient
+                            y2={windowHeight + (windowHeight - svgHeight) < 0 ? 0 : windowHeight + (windowHeight - svgHeight)} // set y2 for gradient
                         >
                             <stop stopColor="#fff" stopOpacity="0"></stop>
                             <stop stopColor="#fff"></stop>
