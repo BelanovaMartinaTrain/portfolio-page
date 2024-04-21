@@ -36,15 +36,15 @@ export default function Navigation({ ulClassName, liClassName, submenuClassName,
                             <NavLink
                                 to={`/projects/${project.id}`}
                                 key={`link-${project.id}`}
-                                className={submenuClassName}
+                                className={`grid justify-center ${submenuClassName}`}
                                 role="menuitem"
                                 aria-label="Navigate to home "
                             >
                                 <h2
-                                    className={`${submenuClassName} ${
+                                    className={` whitespace-nowrap ${submenuClassName} ${
                                         location.pathname === `/projects/${project.id}`
                                             ? "font-medium bg-gradient-to-br from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
-                                            : "font-[200] text-white "
+                                            : "font-[200] text-white  "
                                     }   `}
                                 >
                                     {project.title}
