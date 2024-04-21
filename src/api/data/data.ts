@@ -46,7 +46,7 @@ export const projectData = [
             "VPS setup with load balancer",
         ],
         stack: ["Node JS", "Express", "Typescript", "REDIS", "Docker", "Ubuntu", "Digital Ocean", "ES6"],
-        links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecast" }],
+        links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/backend-server" }],
         imageClass: "xs:group-hover:opacity-10 opacity-50",
         lighthouse: "",
     },
@@ -82,7 +82,7 @@ export const projectData = [
             "Access the data in .csv files",
             "Mikrotik router configuration within remote access",
         ],
-        stack: ["Python 3", "paramiko", "csv", "getpass4"],
+        stack: ["Python 3"],
         links: [
             {
                 text: "Github",
@@ -177,6 +177,25 @@ export const coursesList = [
         learningStack: ["React"],
         duration: "13 hours 13 min",
         link: "https://scrimba.com/learn/react",
+    },
+    {
+        id: uid(),
+        title: "MERN Stack Crash Course Tutorial",
+        description: "Learn MERN stack during creating of a Workout buddy app",
+        platform: "YouTube",
+        learningStack: ["MongoDB", "Express", "React", "Node JS", "Javascript"],
+        duration: "2h 50 min",
+        link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE",
+    },
+    {
+        id: uid(),
+        title: "Complete MERN Beginner Course ",
+        description:
+            "Learn how to build a full-stack MERN app with React, Node, Express, MongoDB Atlas, and TypeScript. This course is beginner-friendly and teaches you everything you need to know along the way.",
+        platform: "YouTube",
+        learningStack: ["MongoDB", "Express", "React", "Node JS", "Typescript"],
+        duration: "7h 50 min",
+        link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE",
     },
     {
         id: uid(),

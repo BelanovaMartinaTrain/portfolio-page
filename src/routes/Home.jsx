@@ -37,7 +37,7 @@ function Home() {
                                 </span>
                                 . I&apos;m a{" "}
                                 <span className=" font-semibold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
-                                    FULLSTACK{" "}
+                                    FULL STACK{" "}
                                 </span>
                                 Web Developer.
                                 <br /> Feel free to check out my portfolio and get a glimpse of my work. Enjoy!

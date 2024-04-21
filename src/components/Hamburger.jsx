@@ -60,7 +60,7 @@ export default function Hamburger({ hamburgerClass }) {
                 <Navigation
                     ulClassName={`${ulClassName} ${!isOpen ? " h-0  " : "h-[80%]  "}`}
                     liClassName={`${liClassName}  ${!isOpen ? "pointer-events-none opacity-0 text-xs p-0" : " opacity-100 text-xl p-2 "}`}
-                    submenuClassName={`${liClassName}  ${!isOpen ? "pointer-events-none opacity-0 text-xs p-0" : " opacity-100 text-lg p-0 "}`}
+                    submenuClassName={`${liClassName}  ${!isOpen ? "pointer-events-none opacity-0 text-xs p-0" : " opacity-100 text-lg p-[0.1rem] "}`}
                     submenu={true}
                 />
             </div>
