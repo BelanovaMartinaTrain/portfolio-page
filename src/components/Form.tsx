@@ -38,7 +38,7 @@ export function ContactFormDemo() {
                 </LabelInputContainer>
                 <div className="  w-full sm:flex sm:justify-end">
                     <button
-                        className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 w-full sm:w-1/4 bg-zinc-800  text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                        className=" relative group/btn  w-full sm:w-1/4 bg-blue-950  text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--blue-800)_inset,0px_-1px_0px_0px_var(--blue-800)_inset]"
                         type="submit"
                     >
                         Send &#x2709;
@@ -50,7 +50,7 @@ export function ContactFormDemo() {
 
                 <div className="flex flex-col space-y-4">
                     <button
-                        className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-blue-950 shadow-[0px_0px_1px_1px_var(--blue-800)]"
                         type="submit"
                     >
                         <IconBrandGithub className="h-4 w-4 text-neutral-300" />
@@ -58,7 +58,7 @@ export function ContactFormDemo() {
                         <BottomGradient />
                     </button>
                     <button
-                        className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                        className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-blue-950 shadow-[0px_0px_1px_1px_var(--blue-800)]"
                         type="submit"
                     >
                         <IconBrandGoogle className="h-4 w-4 text-neutral-300" />

@@ -19,7 +19,7 @@ export default function Card({ props }) {
 
     return (
         <MovingBorderComponent
-            containerClassName=" md:h-full  p-[1px] mx-auto group/border hover:overflow-visible transition-all duration-500 md:col-span-4 lg:col-span-5  w-full aspect-[1.4/1]"
+            containerClassName=" md:h-full  p-[1px] mx-auto group/border hover:overflow-visible transition-all duration-500 md:col-span-4 lg:col-span-3  w-full aspect-[1.4/1]"
             duration={10000}
             className="bg-slate-950 w-full rounded-md "
             borderClassName="w-[50vw] h-[50vh] group-hover/border:w-0 group-hover/border:h-0 opacity-[0.9] rounded-md xs:group-hover/border:opacity-0 "
@@ -37,15 +37,18 @@ export default function Card({ props }) {
                         />
                         {!imgLoaded && <SkeletonImage imgClass={`w-full block `} />}
 
-                        <h2 className="group/link min-h-fit rounded-2xl font-medium xs:text-lg xxs:text-base text-center text-xs sm:text-xl md:text-lg lg:text-xl flex justify-center font-dmsans  my-1  xs:my-3 md:my-1 lg:my-3 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
+                        <h2 className="group/link min-h-fit rounded-2xl font-medium xs:text-lg xxs:text-base text-center text-xs sm:text-xl md:text-lg lg:text-xl flex justify-center font-dmsans  my-1  xs:my-3 md:my-1 lg:my-1 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                             {props.title}{" "}
                         </h2>
 
-                        <div className="font-light grid justify-center  w-full font-dmsans mt-1 p-4 lg:p-10 absolute transition-opacity ease-in-out duration-300 opacity-0 xs:group-hover:opacity-100">
+                        <div className="font-light grid justify-center  w-full font-dmsans mt-1 p-4 lg:p-3 absolute transition-opacity ease-in-out duration-300 opacity-0 xs:group-hover:opacity-100">
                             <h3 className="text-xs lg:text-base ">{props.description}</h3>
-                            <div className="mt-2 lg:mt-5  text-xs lg:text-base  leading-5 ml-5 flex flex-wrap  ">
+                            <div className="mt-2 lg:mt-4  text-xs lg:text-sm  flex flex-wrap  ">
                                 {props.stack.map((stack, index) => (
-                                    <div key={`goal-${index}`} className="border m-[0.2rem] px-[0.3rem] lg:p-1 lg:px-2 rounded-xl">
+                                    <div
+                                        key={`goal-${index}`}
+                                        className="bg-slate-950 border m-[0.2rem] px-[0.3rem] lg:p-[0.1rem] lg:px-[0.4rem] rounded-xl flex "
+                                    >
                                         {stack}
                                     </div>
                                 ))}

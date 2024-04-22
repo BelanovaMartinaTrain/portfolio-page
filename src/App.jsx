@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import LoadingPage from "./components/Loading";
 import ProjectDetail from "./routes/subroutes/projectDetail";
 import ProjectsNavBar from "./routes/subroutes/projectsNavbar";
+import NotFoundComponent from "./routes/NotFoundComponent";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
                 </Route>
                 <Route path="journey" element={<Journey />} />
                 <Route path="connect" element={<Connect />} />
+                <Route path="*" element={<NotFoundComponent />} />
             </Route>
         </Routes>
     );

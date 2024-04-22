@@ -14,6 +14,7 @@ export default function ProjectDetail() {
         image,
         alt,
         description,
+        continueDesc,
         imageClass,
         goals,
         links,
@@ -93,7 +94,9 @@ export default function ProjectDetail() {
                             />
                         )}
                     </div>
-                    <div className="text-slate-50 pb-6">{description}</div>
+                    <div className="text-slate-50 pb-6">
+                        {description} {continueDesc}
+                    </div>
                     <div className="grid   ">
                         <div className=" ">
                             <h3 className="pb-2 text-slate-200">{projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}</h3>

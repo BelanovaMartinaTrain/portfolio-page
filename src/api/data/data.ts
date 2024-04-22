@@ -4,8 +4,8 @@ export const projectData = [
     {
         id: "project-1",
         title: "Aurora Forecast website",
-        description:
-            "Website which displays data needed to forecast Northern lights. It has interactive parts like unit switchers and modals with detailed information. ",
+        description: "Website which displays data needed to forecast Northern lights.",
+        continueDesc: "It has interactive parts like unit switchers and modals with detailed information. ",
         image: "/nahlad2.jpg",
         alt: "screenshot of the aurora forecast website",
         goals: [
@@ -30,8 +30,8 @@ export const projectData = [
     {
         id: "project-2",
         title: "Backend Data server",
-        description:
-            "Backend server to provide data obtained from public APIs created to conserve public API calls and cache data in Redis. It provides data to Aurora Forecast website.",
+        description: "Backend server to provide data obtained from public APIs created to conserve public API calls and cache data in Redis. ",
+        continueDesc: "It provides data to Aurora Forecast website.",
         image: "/server.jpg",
         alt: "server closeup",
         goals: [
@@ -47,14 +47,14 @@ export const projectData = [
         ],
         stack: ["Node JS", "Express", "Typescript", "REDIS", "Docker", "Ubuntu", "Digital Ocean", "ES6"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/backend-server" }],
-        imageClass: "xs:group-hover:opacity-10 opacity-50",
+        imageClass: "xs:group-hover:opacity-30 opacity-70",
         lighthouse: "",
     },
     {
         id: "project-3",
         title: "My portfolio page",
-        description:
-            "My personal portfolio page to present my projects I worked on during the continuous learning process. It provides CV, contact form and lists of projects, courses and tutorials. ",
+        description: "My personal portfolio page to present my projects I worked on during the continuous learning process.",
+        continueDesc: "It provides CV, contact form and lists of projects, courses and tutorials. ",
         image: "/portfolio-screenshot.jpg",
         alt: "my portfolio webpage screenshot",
         goals: [
@@ -71,8 +71,9 @@ export const projectData = [
     {
         id: "project-5",
         title: "Python scripts",
-        description:
-            "Scripts I created to facilitate the process of cleaning public IP subnets. With its help I solely released more than 800 IP addresses in a short amount of time. Without it it would require to access every single contract and manually check and reassign each address. It's what the script does within the bounds of the company's lack of automation tools. ",
+        description: "Scripts I created to facilitate the process of cleaning public IP subnets in my previous job. ",
+        continueDesc:
+            "With its help I solely released more than 800 IP addresses in a short amount of time. Without it it would require to access every single contract and manually check and reassign each address. It's what the script does within the bounds of the company's lack of automation tools. ",
         image: "/python.jpg",
         alt: "closeup of a cup with futuristic background",
         goals: [
@@ -95,8 +96,8 @@ export const projectData = [
     {
         id: "project-4",
         title: "Future projects",
-        description:
-            "In the future I have several ideas about what I would like to build. Some are tools I need and that don't exist in the way I want to use them.",
+        description: "Some of my ideas about what I would like to build in the future. ",
+        continueDesc: "Some are tools I need and that don't exist in the way I want to use them.",
         image: "/future.jpg",
         alt: "closeup of a cup with futuristic background",
         goals: [
@@ -112,7 +113,7 @@ export const projectData = [
                 link: "https://giphy.com/gifs/rickroll-rick-astley-never-gonna-give-you-up-Vuw9m5wXviFIQ",
             },
         ],
-        imageClass: "xs:group-hover:opacity-40 opacity-80",
+        imageClass: "xs:group-hover:opacity-20 opacity-80",
         lighthouse: "",
     },
 ] as const;
@@ -137,6 +138,7 @@ export const coursesList = [
             "ES6",
         ],
         duration: "70 hours 53 min",
+        progress: "Completed",
         link: "https://scrimba.com/learn/frontend",
     },
     {
@@ -147,6 +149,7 @@ export const coursesList = [
         platform: "Scrimba",
         learningStack: ["Javascript"],
         duration: "14 hours 6 min",
+        progress: "Completed",
         link: "https://scrimba.com/learn/javascript",
     },
     {
@@ -156,6 +159,7 @@ export const coursesList = [
         platform: "Scrimba",
         learningStack: ["Typescript"],
         duration: "3 hours 14 min",
+        progress: "Completed",
         link: "https://scrimba.com/learn/typescript",
     },
     {
@@ -166,6 +170,7 @@ export const coursesList = [
         platform: "Scrimba",
         learningStack: ["React"],
         duration: "13 hours 46 min",
+        progress: "Completed",
         link: "https://scrimba.com/learn/learnreact",
     },
     {
@@ -176,6 +181,7 @@ export const coursesList = [
         platform: "Scrimba",
         learningStack: ["React"],
         duration: "13 hours 13 min",
+        progress: "Completed",
         link: "https://scrimba.com/learn/react",
     },
     {
@@ -185,6 +191,7 @@ export const coursesList = [
         platform: "YouTube",
         learningStack: ["MongoDB", "Express", "React", "Node JS", "Javascript"],
         duration: "2h 50 min",
+        progress: "Completed",
         link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE",
     },
     {
@@ -195,7 +202,18 @@ export const coursesList = [
         platform: "YouTube",
         learningStack: ["MongoDB", "Express", "React", "Node JS", "Typescript"],
         duration: "7h 50 min",
+        progress: "Completed",
         link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE",
+    },
+    {
+        id: uid(),
+        title: "Learn Python Programming Masterclass",
+        description: "This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3.",
+        platform: "Udemy",
+        learningStack: ["Python 3"],
+        duration: "63 hours 30 min",
+        progress: "51%",
+        link: "https://scrimba.com/learn/tailwind",
     },
     {
         id: uid(),
@@ -204,6 +222,7 @@ export const coursesList = [
             "Tailwind CSS is a utility-first framework for rapidly building custom designs. This tutorial will teach your Tailwind from scratch, using a mix of lectures and interactive coding challenges.",
         platform: "Scrimba",
         learningStack: ["Tailwind", "Javascript", "HTML"],
+        progress: "Completed",
         duration: "2 hours 34 min",
         link: "https://scrimba.com/learn/tailwind",
     },
