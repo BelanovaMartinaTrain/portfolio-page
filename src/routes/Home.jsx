@@ -36,7 +36,7 @@ function Home() {
                                     Martina
                                 </span>
                                 . I&apos;m a{" "}
-                                <span className=" font-semibold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
+                                <span className="whitespace-nowrap font-semibold capitalise bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent">
                                     FULL STACK{" "}
                                 </span>
                                 Web Developer.
