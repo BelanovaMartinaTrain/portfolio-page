@@ -1,4 +1,4 @@
-import CoursesList from "./subroutes/CoursesDetail";
+import CoursesList from "./subroutes/JourneyCourses";
 
 function Journey() {
     return (

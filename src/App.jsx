@@ -6,8 +6,8 @@ import Journey from "./routes/Journey";
 import Connect from "./routes/Connect";
 import { useState, useEffect } from "react";
 import LoadingPage from "./routes/Loading";
-import ProjectDetail from "./routes/subroutes/PrrojectDetail";
-import ProjectsNavBar from "./routes/subroutes/PrrojectsNavbar";
+import ProjectDetail from "./routes/subroutes/ProjectDetail";
+import ProjectsNavBar from "./routes/subroutes/ProjectsNavbar";
 import NotFoundComponent from "./routes/NotFoundComponent";
 
 function App() {
