@@ -1,12 +1,12 @@
 // Input component extends from shadcnui - https://ui.shadcn.com/docs/components/input
 "use client";
 import * as React from "react";
-import { cn } from "../../utils/cn";
+import { cn } from "../../../utils/cn";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
 
-export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(({ className, ...props }, ref) => {
+const Input = React.forwardRef<HTMLInputElement, InputProps>(({ className, type, ...props }, ref) => {
     const radius = 300; // change this to increase the radius of the hover effect
     const [visible, setVisible] = React.useState(false);
 
@@ -35,10 +35,12 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(({ classNa
             onMouseLeave={() => setVisible(false)}
             className="p-[2px] rounded-lg transition duration-300 group/input"
         >
-            <textarea
+            <input
+                type={type}
                 className={cn(
-                    `flex h-10 w-full border-none bg-slate-950 text-white shadow-input rounded-md px-3 py-2 text-sm  placeholder-text-neutral-600 
-          focus-visible:outline-none focus-visible:ring-[2px]   focus-visible:ring-blue-900 
+                    `flex h-10 w-full border-none bg-slate-950 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
+          file:text-sm file:font-medium placeholder-text-neutral-600 
+          focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-blue-900
            disabled:cursor-not-allowed disabled:opacity-50
            shadow-[0px_0px_1px_1px_var(--blue-950)]
            group-hover/input:shadow-none transition duration-400
@@ -51,6 +53,6 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(({ classNa
         </motion.div>
     );
 });
-TextArea.displayName = "TextArea";
+Input.displayName = "Input";
 
-export { TextArea };
+export { Input };

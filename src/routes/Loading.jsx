@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Loading } from "./LoadingGemini";
-import { SparklesCore } from "./ui/sparkles";
+import { Loading } from "../components/LoadingWithEffect";
+import { SparklesCore } from "../components/ui/effects/sparkles";
 
 export default function LoadingPage() {
     const [isLoaded, setIsLoaded] = useState(false);

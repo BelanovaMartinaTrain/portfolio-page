@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
-import { MovingBorderComponent } from "./ui/movingBorder";
-import SkeletonImage from "./ui/skeletonImage";
+import { MovingBorderComponent } from "./ui/effects/movingBorder";
+import SkeletonImage from "./ui/effects/skeletonImage";
 import { useEffect, useRef, useState } from "react";
 
 // eslint-disable-next-line react/prop-types

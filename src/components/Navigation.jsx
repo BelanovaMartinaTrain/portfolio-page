@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { projectData } from "../api/data/data";
+import { projectData } from "../data/data";
 
 // eslint-disable-next-line react/prop-types
 export default function Navigation({ ulClassName, liClassName, submenuClassName, submenu }) {

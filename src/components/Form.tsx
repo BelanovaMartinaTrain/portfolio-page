@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
-import { TextArea } from "./ui/textarea";
+import { Label } from "./ui/input/label";
+import { Input } from "./ui/input/input";
+import { TextArea } from "./ui/input/textarea";
 import { cn } from "../utils/cn";
 import { IconBrandGithub, IconBrandGoogle, IconBrandReact, IconBrandNodejs } from "@tabler/icons-react";
 

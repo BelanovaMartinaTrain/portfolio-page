@@ -1,5 +1,5 @@
 import { useLocation, NavLink, Outlet } from "react-router-dom";
-import { projectData } from "../../api/data/data";
+import { projectData } from "../../data/data";
 
 export default function ProjectsNavBar() {
     const location = useLocation();

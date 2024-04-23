@@ -1,8 +1,8 @@
 import { Label } from "./label";
 import { Input } from "./input";
-import { cn } from "../../utils/cn";
+import { cn } from "../../../utils/cn";
 // eslint-disable-next-line react/prop-types
-export default function InputFilter({ label = "Filter stack", divClass, labelClass, inputClass, handleClick, handleChange, searchArray = [] }) {
+export default function InputFilter({ label = "Filter stack", divClass, labelClass, inputClass, handleClick, handleChange, inputValue = "" }) {
     return (
         <>
             <div className={cn("flex mt-4  justify-start items-baseline ", divClass)}>
@@ -12,16 +12,16 @@ export default function InputFilter({ label = "Filter stack", divClass, labelCla
                 <Input
                     id="filter"
                     onChange={handleChange}
-                    value={searchArray.join(" ")}
+                    value={inputValue}
                     placeholder="typescript python"
                     className={cn("bg-slate-950 h-8 md:w-[17rem] text-base border-1 border-blue-900 placeholder:text-blue-900", inputClass)}
                 ></Input>
 
                 <span
-                    className={`px-1 self-center  cursor-pointer ${searchArray.length !== 0 && searchArray[0] !== "" ? "visible" : "invisible"}`}
+                    className={`px-1 self-center  cursor-pointer ${inputValue.length !== 0 && inputValue[0] !== "" ? "visible" : "invisible"}`}
                     onClick={handleClick}
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-white align-middle ">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-slate-400 align-middle ">
                         <path d="m259-206-52-53 220-221-220-221 52-53 221 221 221-221 52 53-220 221 220 221-52 53-221-221-221 221Z" />
                     </svg>
                 </span>

@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./routes/Layout";
 import Projects from "./routes/Projects";
 import Home from "./routes/Home";
 import Journey from "./routes/Journey";
 import Connect from "./routes/Connect";
 import { useState, useEffect } from "react";
-import LoadingPage from "./components/Loading";
-import ProjectDetail from "./routes/subroutes/projectDetail";
-import ProjectsNavBar from "./routes/subroutes/projectsNavbar";
+import LoadingPage from "./routes/Loading";
+import ProjectDetail from "./routes/subroutes/PrrojectDetail";
+import ProjectsNavBar from "./routes/subroutes/PrrojectsNavbar";
 import NotFoundComponent from "./routes/NotFoundComponent";
 
 function App() {

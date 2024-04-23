@@ -1,4 +1,4 @@
-import { cn } from "../../utils/cn";
+import { cn } from "../../../utils/cn";
 
 // eslint-disable-next-line react/prop-types
 export default function SkeletonImage({ imgClass }) {

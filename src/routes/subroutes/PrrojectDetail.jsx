@@ -1,11 +1,11 @@
-import { TracingBeam } from "../../components/ui/tracing-beam";
+import { TracingBeam } from "../../components/ui/effects/tracing-beam";
 import { useParams } from "react-router-dom";
-import { projectData } from "../../api/data/data";
+import { projectData } from "../../data/data";
 import { Link } from "react-router-dom";
 import { IconBrandGithub, IconBrowser } from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
-import SkeletonImage from "../../components/ui/skeletonImage";
-import { cn } from "../../utils/cn";
+import SkeletonImage from "../../components/ui/effects/skeletonImage";
+//import { cn } from "../../utils/cn";
 
 export default function ProjectDetail() {
     const { id } = useParams();

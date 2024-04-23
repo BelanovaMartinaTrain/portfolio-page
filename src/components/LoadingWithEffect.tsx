@@ -1,7 +1,7 @@
 "use client";
 import { useTime, useTransform } from "framer-motion";
 import React from "react";
-import { GeminiEffect } from "./ui/geminiLoading";
+import { GeminiEffect } from "./ui/effects/loadingEffect";
 
 export function Loading() {
     const ref = React.useRef(null);

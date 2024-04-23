@@ -2,7 +2,7 @@
 import React from "react";
 import { motion, useAnimationFrame, useMotionTemplate, useMotionValue, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "../../utils/cn";
+import { cn } from "../../../utils/cn";
 
 export function MovingBorderComponent({
     borderRadius = "1rem",

@@ -1,8 +1,8 @@
 //import { CanvasRevealEffectDemo3 } from "../components/ui/homePageEffect";
 import { useEffect, useState, useRef } from "react";
-import { MovingBorderComponent } from "../components/ui/movingBorder";
+import { MovingBorderComponent } from "../components/ui/effects/movingBorder";
 // import { Link } from "react-router-dom";
-import { SparklesBg } from "../components/ui/sparklesBg";
+import { SparklesBg } from "../components/ui/effects/sparklesBg";
 
 function Home() {
     const [isLoading, setIsLoading] = useState(true);
