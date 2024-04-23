@@ -109,8 +109,8 @@ export default function ProjectDetail() {
                     <div className="text-slate-50 pb-6">
                         {description} {continueDesc}
                     </div>
-                    <div className="grid   ">
-                        <div className=" ">
+                    <div className="grid md:grid-flow-col  ">
+                        <div className=" md:mr-[7vw]">
                             <h3 className="pb-2 text-slate-200">{projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}</h3>
                             <ul className=" list-disc list-outside pl-4 pb-4 text-slate-300">
                                 {goals.map((goal) => (
@@ -122,7 +122,7 @@ export default function ProjectDetail() {
                             <img
                                 src={lighthouse}
                                 alt="lighthouse tool stats"
-                                className="  mt-10 shadow-decor rounded-xl w-full md:w-[50%]    "
+                                className=" mt-8 md:mt-0   rounded-md w-[80%]     "
                                 //onClick={handleClick}
                             />
                         )}

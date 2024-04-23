@@ -8,17 +8,6 @@ export default function Navigation({ ulClassName, liClassName, submenuClassName,
     return (
         <>
             <menu className={`${ulClassName} `} role="menu">
-                <NavLink to="/" className={liClassName} role="menuitem" aria-label="Navigate to home ">
-                    <h2
-                        className={`${liClassName} ${
-                            location.pathname === "/"
-                                ? "font-semibold  bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500  bg-clip-text text-transparent"
-                                : "font-light text-white hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)] "
-                        }   `}
-                    >
-                        HOME
-                    </h2>
-                </NavLink>
                 <NavLink to="/projects" className={liClassName} role="menuitem" aria-label="Navigate to home ">
                     <h2
                         className={`-mb-7 ${liClassName} ${
