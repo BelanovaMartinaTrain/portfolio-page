@@ -1,13 +1,23 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import { SiScrimba, SiYoutube, SiUdemy } from "react-icons/si";
 
 export default function CourseComponent({ course }) {
     return (
         <>
             <div key={course.id} className="mb-10 ">
-                <p className="border-blue-700 rounded-xl px-2 py-0 whitespace-nowrap my-1 r border w-fit text-blue-400 text-[0.8rem] ">
-                    {course.platform}
-                </p>
+                <div className="border-blue-700 flex  rounded-xl px-2 py-0 whitespace-nowrap my-1 r border w-fit text-blue-400 text-[0.8rem] ">
+                    {course.platform === "Scrimba" ? (
+                        <SiScrimba className="mr-1 mt-[0.18rem]" />
+                    ) : course.platform === "YouTube" ? (
+                        <SiYoutube className="mr-1 mt-[0.18rem]" />
+                    ) : course.platform === "Udemy" ? (
+                        <SiUdemy className="mr-1 mt-[0.18rem]" />
+                    ) : (
+                        ""
+                    )}
+                    <p>{course.platform}</p>
+                </div>
                 <Link to={course.link} target="_blank" tabIndex={-1}>
                     <h2 className=" text-xl text-slate-100 mb-4  font-dmsans mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
                         {course.title}{" "}
