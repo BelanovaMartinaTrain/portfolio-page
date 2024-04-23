@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { IconBrandGithub, IconBrowser } from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
 import SkeletonImage from "../../components/ui/skeletonImage";
+import { cn } from "../../utils/cn";
 
 export default function ProjectDetail() {
     const { id } = useParams();
@@ -31,6 +32,17 @@ export default function ProjectDetail() {
 
         return imgRef.current.removeEventListener("load", () => setImgLoaded(true));
     }, []);
+
+    // function removeClass(array, utilityClass) {
+    //     const filteredClasses = array.filter((item) => item.toLowerCase() !== utilityClass.toLowerCase()).join(" ");
+    //     return filteredClasses;
+    // }
+
+    // function handleClick(event) {
+    //     event.target.className = event.target.className.includes("md:w-[50%]")
+    //         ? removeClass(event.target.className.split(" "), "md:w-[50%]")
+    //         : cn(event.target.className, "md:w-[50%]");
+    // }
 
     return (
         <>
@@ -110,7 +122,8 @@ export default function ProjectDetail() {
                             <img
                                 src={lighthouse}
                                 alt="lighthouse tool stats"
-                                className="  mt-10 shadow-decor rounded-xl w-full md:w-[50%]  filter  "
+                                className="  mt-10 shadow-decor rounded-xl w-full md:w-[50%]    "
+                                //onClick={handleClick}
                             />
                         )}
                     </div>

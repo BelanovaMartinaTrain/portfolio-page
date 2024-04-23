@@ -13,6 +13,7 @@ export const projectData = [
             "Server Components",
             "Fast-loading Website",
             "Modern Design",
+            "ACCESSIBILITY",
             "React Context",
             "NEXT JS App routing",
             "Grid Layouts",
@@ -213,7 +214,7 @@ export const coursesList = [
         learningStack: ["Python 3"],
         duration: "63 hours 30 min",
         progress: "51%",
-        link: "https://scrimba.com/learn/tailwind",
+        link: "https://www.udemy.com/share/101Wai3@x2xPbKf_fw5rVeXqkJmv8ZGZV8J95dbghAtf4hlz0GhaHdF8c51wlQwTndJ9a4RHiA==/",
     },
     {
         id: uid(),
