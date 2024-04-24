@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <personal>
+    <first_name>Martina</first_name>
+    <last_name>Belanová</last_name>
+    <label>Full Stack Web Developer</label>
+    <image></image>
+    <email>belanova.m@gmail.com</email>
+    <url>https://martinabelanova.site/</url>
+    <address>Bratislava</address>
+    <phone>+421908483153</phone>
+    <summary>Self-thought Full Stack Web Developer former Network Engineer</summary>
+    <profiles>
+      <network>GitHub</network>
+      <url>https://github.com/BelanovaMartinaTrain</url>
+    </profiles>
+    <profiles>
+      <network>LinkedIn</network>
+      <url>https://www.linkedin.com/in/martina-belanov%C3%A1-b08646145/</url>
+    </profiles>
+  </personal>
+  <work>
+    <company>VNET a.s.</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Network provider</description>
+    <position>Network Engineer</position>
+    <startDate>2021-11</startDate>
+    <endDate>2023-10</endDate>
+    <summary>Maintain the network</summary>
+    <summary>Handle service tickets</summary>
+    <summary>Create reports</summary>
+    <summary>Handle installation of our new customers with on-site technicians</summary>
+    <summary>Create documentation</summary>
+    <summary>Created a workflow to release unused public IPv4 addresses as my personal side project</summary>
+  </work>
+  <work>
+    <company>AT&amp;T Global Network Services Slovakia, s.r.o.</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Provider of global network services</description>
+    <position>LAN/WAN Service Manager</position>
+    <startDate>2018-07</startDate>
+    <endDate>2021-08</endDate>
+    <summary>Ensure the installations, deliveries and availability were following the contract with Shell</summary>
+    <summary>Ensure incidents are solved within the SLA</summary>
+    <summary>Be in regular contact with the customer&#x27;s service managers to solve any concerns that may occur</summary>
+    <summary>Proactively review closed incident tickets</summary>
+    <summary>Help to avoid incidents by seeking out recurring problems</summary>
+    <summary>During transformation to Aruba to review the sites to ensure it&#x27;s delivered up to the agreed technical guidance</summary>
+    <summary>Create overviews of all assets and tickets by the customer&#x27;s specifications</summary>
+  </work>
+  <work>
+    <company>X-NET spol. s r. o.</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Outsourcing of network services</description>
+    <position>Technical Specialist</position>
+    <startDate>2017-04</startDate>
+    <endDate>2018-07</endDate>
+    <summary>Help with maintaining and managing network services for our customers</summary>
+    <summary>Suggest solutions for projects and their implementation and network design</summary>
+    <summary>Maintain documentation</summary>
+    <summary>Support with wide variety of different devices and services (Huawei, Digi, Sophos, Pulse secure ,LAN, WAN, Wifi solutions, VPN solutions)</summary>
+  </work>
+  <work>
+    <company>AT&amp;T Global Network Services Slovakia</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Provider of global network services</description>
+    <position>Dedicated Client MACD Engineer</position>
+    <startDate>2012-03</startDate>
+    <endDate>2017-04</endDate>
+    <summary>Configuration, maintaining and troubleshooting Cisco devices</summary>
+    <summary>Support of Juniper devices, F5, Arubas, Netgates and more</summary>
+    <summary>Work with on-site technicians during installations of network solutions at customer&#x27;s premise</summary>
+    <summary>Bring up whole sites with several types of devices with redundancy and security solutions</summary>
+    <summary>Every site installation required excessive amount of troubleshooting as a part of working all around the world with a great amount of different local providers with their own limitations</summary>
+    <summary>Lead the calls during the installations with team members from multiple companies and multiple countries</summary>
+    <summary>Support the AT&amp;Ts infrastructure for dedicated customers around the world 24/7.</summary>
+  </work>
+  <education>
+    <institution>Slovak University of Technology</institution>
+    <faculty>Faculty of Electrical Engineering and Information Technology</faculty>
+    <area>Applied Informatics</area>
+    <location>Bratislava, Slovakia</location>
+    <startDate>2009</startDate>
+    <endDate>2012</endDate>
+  </education>
+  <education>
+    <institution>Comenius University</institution>
+    <faculty>Faculty of Philosophy</faculty>
+    <area>Psychology</area>
+    <location>Bratislava, Slovakia</location>
+    <startDate>2005</startDate>
+    <endDate>2009</endDate>
+  </education>
+  <education>
+    <institution>Grammar School Golianova</institution>
+    <faculty></faculty>
+    <area>Informatics</area>
+    <location>Nitra, Slovakia</location>
+    <startDate>2001</startDate>
+    <endDate>2005</endDate>
+  </education>
+  <skills>
+    <name>Programming</name>
+    <keywords>Typescript</keywords>
+    <keywords>Python</keywords>
+    <keywords>Javascript</keywords>
+  </skills>
+  <skills>
+    <name>Frontend Development</name>
+    <keywords>React</keywords>
+    <keywords>Next.js</keywords>
+    <keywords>HTML</keywords>
+    <keywords>CSS</keywords>
+    <keywords>TailwindCSS</keywords>
+  </skills>
+  <skills>
+    <name>Backend Development</name>
+    <keywords>Node.js</keywords>
+    <keywords>Express</keywords>
+    <keywords>MongoDB</keywords>
+    <keywords>REDIS</keywords>
+    <keywords>REST API</keywords>
+    <keywords>Docker</keywords>
+  </skills>
+  <skills>
+    <name>Tools and platforms</name>
+    <keywords>Netlify</keywords>
+    <keywords>Vercel</keywords>
+    <keywords>Firebase</keywords>
+    <keywords>Github</keywords>
+    <keywords>Digital Ocean</keywords>
+    <keywords>Unix/Linux</keywords>
+  </skills>
+  <skills>
+    <name>LAN/WAN administration</name>
+    <keywords>Network administration</keywords>
+    <keywords>Cisco</keywords>
+    <keywords>VPN</keywords>
+    <keywords>VLAN</keywords>
+  </skills>
+  <skills>
+    <name>Misc skills</name>
+    <keywords>Communication</keywords>
+    <keywords>Fast Learning</keywords>
+    <keywords>Independence</keywords>
+    <keywords>Debugging</keywords>
+    <keywords>UI Design</keywords>
+  </skills>
+  <languages>
+    <language>Slovak</language>
+    <fluency>Native speaker</fluency>
+  </languages>
+  <languages>
+    <language>English</language>
+    <fluency>B2/C1</fluency>
+  </languages>
+  <languages>
+    <language>German</language>
+    <fluency>A1</fluency>
+  </languages>
+  <languages>
+    <language>Spanish</language>
+    <fluency>A1</fluency>
+  </languages>
+  <interests>
+    <name>Hobbies</name>
+    <keywords>Cycling</keywords>
+    <keywords>Books</keywords>
+    <keywords>Nature</keywords>
+    <keywords>Paddleboard</keywords>
+    <keywords>Traveling</keywords>
+    <keywords>Music</keywords>
+    <keywords>Programming</keywords>
+    <keywords>Talking</keywords>
+    <keywords>Walking</keywords>
+    <keywords>Living</keywords>
+  </interests>
+  <projects>
+    <name>Portfolio website</name>
+    <description>My personal portfolio page to present my projects I worked on during the continuous learning process</description>
+    <url>https://martinabelanova.site/</url>
+  </projects>
+</root>

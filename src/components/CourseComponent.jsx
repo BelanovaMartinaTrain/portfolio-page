@@ -16,7 +16,7 @@ export default function CourseComponent({ course }) {
                     ) : (
                         ""
                     )}
-                    <p>{course.platform}</p>
+                    <p className="text-blue-400 text-[0.8rem]">{course.platform}</p>
                 </div>
                 <Link to={course.link} target="_blank" tabIndex={-1}>
                     <h2 className=" text-xl text-slate-100 mb-4  font-dmsans mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
@@ -32,7 +32,7 @@ export default function CourseComponent({ course }) {
                         </svg>
                     </h2>
                 </Link>
-                <div className="text-sm  prose prose-sm prose-invert ">{course.description}</div>
+                <div className="text-sm  text-neutral-300 ">{course.description}</div>
                 <div className="mt-2 text-sm text-blue-400">
                     {course.duration} ({course.progress})
                 </div>

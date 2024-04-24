@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { MovingBorderComponent } from "../components/ui/effects/movingBorder";
 // import { Link } from "react-router-dom";
 import { SparklesBg } from "../components/ui/effects/sparklesBg";
+import { NavLink } from "react-router-dom";
 
 function Home() {
     const [isLoading, setIsLoading] = useState(true);
@@ -42,22 +43,18 @@ function Home() {
                                 Web Developer.
                                 <br /> Feel free to check out my portfolio and get a glimpse of my work. Enjoy!
                             </h1>
-                            {/* <div className=" grid grid-flow-col justify-evenly "> */}
-                            {/* <Button className="text-base px-2 md:text-xl mr-2 uppercase tracking-wider md:px-6" duration="7000">
-                                    <Link to="/projects" className="py-4 px-7 ">
-                                        Projects
-                                    </Link>
-                                </Button> */}
-                            <MovingBorderComponent
-                                className="bg-black/[0.1] border border-slate-800 flex items-center transition-all duration-300 justify-center hover:border-blue-700 hover:shadow-effect "
-                                duration="7000"
-                                containerClassName="h-[3.25rem] md:h-16 w-28 md:w-40"
-                                borderClassName="opacity-[0.9]"
-                                as="button"
-                            >
-                                CV
-                            </MovingBorderComponent>
-                            {/* </div> */}
+
+                            <NavLink to="/cv">
+                                <MovingBorderComponent
+                                    className="bg-black/[0.1] border border-slate-800 flex items-center transition-all duration-300 justify-center hover:border-blue-700 hover:shadow-effect "
+                                    duration="7000"
+                                    containerClassName="h-[3.25rem] md:h-16 w-28 md:w-40"
+                                    borderClassName="opacity-[0.9]"
+                                    as="button"
+                                >
+                                    CV
+                                </MovingBorderComponent>
+                            </NavLink>
                         </section>
                     </div>
                 </div>

@@ -35,25 +35,9 @@ export default {
     },
 
   },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          "primary": "#14532d",
-          "secondary": "#15803d",
-          "accent": "#059669",
-          "neutral": "#292524",
-          "base-100": "#000001",
-          "info": "#0091ad",
-          "success": "#16a34a",
-          "warning": "#eab308",
-          "error": "#b91c1c"
-        },
-      },
-    ],
-  },
+ 
   // eslint-disable-next-line no-undef
-  plugins: [require("daisyui"), addVariablesForColors]
+  plugins: [ require('autoprefixer'),addVariablesForColors]
 }
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

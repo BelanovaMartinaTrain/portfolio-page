@@ -9,6 +9,7 @@ import LoadingPage from "./routes/Loading";
 import ProjectDetail from "./routes/subroutes/ProjectDetail";
 import ProjectsNavBar from "./routes/subroutes/ProjectsNavbar";
 import NotFoundComponent from "./routes/NotFoundComponent";
+import CV from "./routes/CV";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
                 </Route>
                 <Route path="journey" element={<Journey />} />
                 <Route path="connect" element={<Connect />} />
+                <Route path="cv" element={<CV />} />
                 <Route path="*" element={<NotFoundComponent />} />
             </Route>
         </Routes>

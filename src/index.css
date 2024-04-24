@@ -2,29 +2,6 @@
 @tailwind components;
 @tailwind utilities;   
 
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #f5f5f4;
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #f5f5f4;
-    transform-origin: bottom right;
-    transition: transform 0.4s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
 
   .grid-main-layout {
     display: grid !important;

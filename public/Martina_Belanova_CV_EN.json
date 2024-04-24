@@ -1,0 +1,172 @@
+{
+    "personal": {
+        "first_name": "Martina",
+        "last_name": "Belanová",
+        "label": "Full Stack Web Developer",
+        "image": "",
+        "email": "belanova.m@gmail.com",
+        "url": "https://martinabelanova.site/",
+        "address": "Bratislava",
+        "phone": "+421908483153",
+        "summary": "Self-thought Full Stack Web Developer former Network Engineer",
+        "profiles": [
+            {
+                "network": "GitHub",
+                "url": "https://github.com/BelanovaMartinaTrain"
+            },
+            {
+                "network": "LinkedIn",
+                "url": "https://www.linkedin.com/in/martina-belanov%C3%A1-b08646145/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "VNET a.s.",
+            "location": "Bratislava, Slovakia",
+            "description": "Network provider",
+            "position": "Network Engineer",
+            "startDate": "2021-11",
+            "endDate": "2023-10",
+            "summary": [
+                "Maintain the network",
+                "Handle service tickets",
+                "Create reports",
+                "Handle installation of our new customers with on-site technicians",
+                "Create documentation",
+                "Created a workflow to release unused public IPv4 addresses as my personal side project"
+            ]
+        },
+        {
+            "company": "AT&T Global Network Services Slovakia, s.r.o.",
+            "location": "Bratislava, Slovakia",
+            "description": "Provider of global network services",
+            "position": "LAN/WAN Service Manager",
+            "startDate": "2018-07",
+            "endDate": "2021-08",
+            "summary": [
+                "Ensure the installations, deliveries and availability were following the contract with Shell",
+                "Ensure incidents are solved within the SLA",
+                "Be in regular contact with the customer's service managers to solve any concerns that may occur",
+                "Proactively review closed incident tickets",
+                "Help to avoid incidents by seeking out recurring problems",
+                "During transformation to Aruba to review the sites to ensure it's delivered up to the agreed technical guidance",
+                "Create overviews of all assets and tickets by the customer's specifications"
+            ]
+        },
+        {
+            "company": "X-NET spol. s r. o.",
+            "location": "Bratislava, Slovakia",
+            "description": "Outsourcing of network services",
+            "position": "Technical Specialist",
+            "startDate": "2017-04",
+            "endDate": "2018-07",
+            "summary": [
+                "Help with maintaining and managing network services for our customers",
+                "Suggest solutions for projects and their implementation and network design",
+                "Maintain documentation",
+                "Support with wide variety of different devices and services (Huawei, Digi, Sophos, Pulse secure ,LAN, WAN, Wifi solutions, VPN solutions)"
+            ]
+        },
+        {
+            "company": "AT&T Global Network Services Slovakia",
+            "location": "Bratislava, Slovakia",
+            "description": "Provider of global network services",
+            "position": "Dedicated Client MACD Engineer",
+            "startDate": "2012-03",
+            "endDate": "2017-04",
+            "summary": [
+                "Configuration, maintaining and troubleshooting Cisco devices",
+                "Support of Juniper devices, F5, Arubas, Netgates and more",
+                "Work with on-site technicians during installations of network solutions at customer's premise",
+                "Bring up whole sites with several types of devices with redundancy and security solutions",
+                "Every site installation required excessive amount of troubleshooting as a part of working all around the world with a great amount of different local providers with their own limitations",
+                "Lead the calls during the installations with team members from multiple companies and multiple countries",
+                "Support the AT&Ts infrastructure for dedicated customers around the world 24/7."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Slovak University of Technology",
+            "faculty": "Faculty of Electrical Engineering and Information Technology",
+            "area": "Applied Informatics",
+            "location": "Bratislava, Slovakia",
+            "startDate": "2009",
+            "endDate": "2012"
+        },
+        {
+            "institution": "Comenius University",
+            "faculty": "Faculty of Philosophy",
+            "area": "Psychology",
+            "location": "Bratislava, Slovakia",
+            "startDate": "2005",
+            "endDate": "2009"
+        },
+        {
+            "institution": "Grammar School Golianova",
+            "faculty": "",
+            "area": "Informatics",
+            "location": "Nitra, Slovakia",
+            "startDate": "2001",
+            "endDate": "2005"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming",
+            "keywords": ["Typescript", "Python", "Javascript"]
+        },
+        {
+            "name": "Frontend Development",
+            "keywords": ["React", "Next.js", "HTML", "CSS", "TailwindCSS"]
+        },
+        {
+            "name": "Backend Development",
+            "keywords": ["Node.js", "Express", "MongoDB", "REDIS", "REST API", "Docker"]
+        },
+        {
+            "name": "Tools and platforms",
+            "keywords": ["Netlify", "Vercel", "Firebase", "Github", "Digital Ocean", "Unix/Linux"]
+        },
+        {
+            "name": "LAN/WAN administration",
+            "keywords": ["Network administration", "Cisco", "VPN", "VLAN"]
+        },
+        {
+            "name": "Misc skills",
+            "keywords": ["Communication", "Fast Learning", "Independence", "Debugging", "UI Design"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Slovak",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "B2/C1"
+        },
+        {
+            "language": "German",
+            "fluency": "A1"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "A1"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Hobbies",
+            "keywords": ["Cycling", "Books", "Nature", "Paddleboard", "Traveling", "Music", "Programming", "Talking", "Walking", "Living"]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Portfolio website",
+            "description": "My personal portfolio page to present my projects I worked on during the continuous learning process",
+            "url": "https://martinabelanova.site/"
+        }
+    ]
+}

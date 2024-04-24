@@ -1,26 +1,31 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Label } from "./ui/input/label";
 import { Input } from "./ui/input/input";
 import { TextArea } from "./ui/input/textarea";
 import { cn } from "../utils/cn";
 import { BottomGradient } from "./ui/effects/bottomGradient";
 import { FaPaperPlane } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
+import { ImSpinner2 } from "react-icons/im";
+
+emailjs.init({
+    publicKey: "_w0TS0n5ISEX3B_0Q",
+});
+
+const clearForm = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+};
 
 export default function ConnectForm() {
-    const [formDataState, setFormDataState] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
+    const [formDataState, setFormDataState] = useState(clearForm);
     const [showAlert, setShowAlert] = useState(false);
-    const [submittedForm, setSubmittedForm] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
+    const [submittedForm, setSubmittedForm] = useState(clearForm);
+    const [isError, setIsError] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleChange = (event) => {
         setFormDataState((prev) => ({
@@ -33,22 +38,32 @@ export default function ConnectForm() {
         e.preventDefault();
         // const form = e.target;
         // const formData = new FormData(form);
+
         setSubmittedForm(formDataState);
+        setIsLoading(true);
 
-        setFormDataState({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-        });
-
-        const timer = setTimeout(() => setShowAlert(false), 5000);
-        return () => clearTimeout(timer);
+        emailjs.send("service_abi6ikk", "template_h6xf9hb", formDataState).then(
+            () => {
+                setFormDataState(clearForm);
+                setIsError(false);
+                setShowAlert(true);
+                setIsLoading(false);
+            },
+            () => {
+                setIsError(true);
+                setShowAlert(true);
+                setIsLoading(false);
+            }
+        );
     };
 
-    function handleClick() {
-        setShowAlert(true);
-    }
+    useEffect(() => {
+        let timer;
+        if (showAlert) {
+            timer = setTimeout(() => setShowAlert(), 10000);
+        }
+        return () => clearTimeout(timer);
+    }, [showAlert]);
 
     return (
         <>
@@ -67,6 +82,7 @@ export default function ConnectForm() {
                             onChange={handleChange}
                             placeholder="email@email.com"
                             type="email"
+                            className="appearance-none"
                             required
                         />
                     </LabelInputContainer>
@@ -80,6 +96,7 @@ export default function ConnectForm() {
                         onChange={handleChange}
                         placeholder="Job Interview"
                         type="text"
+                        className=""
                         required
                     />
                 </LabelInputContainer>
@@ -98,13 +115,15 @@ export default function ConnectForm() {
                 </LabelInputContainer>
                 <div className="  w-full sm:flex sm:justify-end">
                     <button
-                        className=" relative group/btn  w-full sm:w-1/4 bg-blue-950  text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--blue-800)_inset,0px_-1px_0px_0px_var(--blue-800)_inset]"
+                        className={` relative group/btn  ${
+                            isLoading && "disabled"
+                        } w-full sm:w-1/4 bg-blue-950 disabled:text-slate-600 text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--blue-800)_inset,0px_-1px_0px_0px_var(--blue-800)_inset]`}
                         type="submit"
-                        onClick={handleClick}
+                        disabled={isLoading}
                     >
                         <span className="flex justify-center">
                             {" "}
-                            Send <FaPaperPlane className="ml-2 mt-1 " />
+                            Send {isLoading ? <ImSpinner2 className="ml-2 mt-1 animate-spin" /> : <FaPaperPlane className="ml-2 mt-1 " />}
                         </span>
                         <BottomGradient />
                     </button>
@@ -115,7 +134,9 @@ export default function ConnectForm() {
                     !showAlert ? "opacity-0" : "opacity-100"
                 }`}
             >
-                Thank you for your message {submittedForm.name}! I&apos;ll get in touch with you soon :)
+                {isError
+                    ? "Oops! Something went wrong... Please try to contact me trough my accounts or the contact details in my CV. Thank you :)"
+                    : `Thank you for your message ${submittedForm.name}! I'll get in touch with you soon :)`}
             </div>
         </>
     );

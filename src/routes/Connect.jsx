@@ -1,5 +1,7 @@
 import ConnectForm from "../components/ConnectForm";
 import ButtonLink from "../components/ButtonLink";
+import { NavLink } from "react-router-dom";
+import { BsPersonVcard } from "react-icons/bs";
 
 function Connect() {
     return (
@@ -17,6 +19,8 @@ function Connect() {
                         linkClass={"w-full "}
                         spanClass={""}
                         iconType={"linkedin"}
+                        rel="noreferrer"
+                        target="_blank"
                     />
                     <ButtonLink
                         label="Github"
@@ -24,15 +28,16 @@ function Connect() {
                         linkClass={"w-full"}
                         spanClass={""}
                         iconType={"github"}
+                        rel="noreferrer"
+                        target="_blank"
                     />
-                    <ButtonLink
-                        label="Curriculum Vitae
-"
-                        linkTo={""}
-                        linkClass={"w-full"}
-                        spanClass={""}
-                        iconType={""}
-                    />
+                    <NavLink
+                        to={"/cv"}
+                        className=" text-slate-300 text-base w-full relative group/btn flex space-x-2 items-center justify-start px-4   rounded-md h-10 font-medium shadow-input bg-blue-950 shadow-[0px_0px_1px_1px_var(--blue-800)]"
+                    >
+                        <BsPersonVcard className="h-4 w-4 text-slate-300 mr-2" />
+                        Curriculum Vitae
+                    </NavLink>
                 </div>
                 <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-8 h-[1px] w-full" />
                 <p className=" text-lg font-light max-w-sm mt-2 text-slate-100">Or send me a message:</p>
