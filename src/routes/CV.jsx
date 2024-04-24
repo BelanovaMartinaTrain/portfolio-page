@@ -52,7 +52,7 @@ export default function CV() {
 
                             <h3 className="mt-4 mb-2 lg:mb-0 print:mb-0 print:text-sm">Work experience:</h3>
                             {data.work.map((job) => (
-                                <div key={job.company} className=" mb-5 lg:mb-2 print:mb-2">
+                                <div key={job.company} className=" mb-5 lg:mb-4 print:mb-2">
                                     <h4 className="print:text-xs">{job.company}</h4>
                                     <h4 className="print:text-xs">{job.position}</h4>
 
