@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { IconBrandGithub, IconBrowser } from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
 import SkeletonImage from "../../components/ui/effects/skeletonImage";
-//import { cn } from "../../utils/cn";
 
 export default function ProjectDetail() {
     const { id } = useParams();
@@ -33,17 +32,6 @@ export default function ProjectDetail() {
         return imgRef.current.removeEventListener("load", () => setImgLoaded(true));
     }, []);
 
-    // function removeClass(array, utilityClass) {
-    //     const filteredClasses = array.filter((item) => item.toLowerCase() !== utilityClass.toLowerCase()).join(" ");
-    //     return filteredClasses;
-    // }
-
-    // function handleClick(event) {
-    //     event.target.className = event.target.className.includes("md:w-[50%]")
-    //         ? removeClass(event.target.className.split(" "), "md:w-[50%]")
-    //         : cn(event.target.className, "md:w-[50%]");
-    // }
-
     return (
         <>
             <TracingBeam className="px-5 lg:px-6 h-full mb-[10%]">
@@ -54,8 +42,8 @@ export default function ProjectDetail() {
 
                     <div className="grid grid-flow-row grid-cols-1 md:grid-flow-col gap-y-2  md:grid-cols-10 mb-10  ">
                         <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-4 md:mt-0 md:order-none  ">
-                            <h3 className="text-lg text-slate-200">Tech Stack:</h3>
-                            <ul className="text-slate-300 flex flex-wrap   mb-[5%] gap-x-2 pr-4">
+                            <h3 className="text-lg text-slate-200 normal-case">Tech Stack:</h3>
+                            <ul className="text-slate-300 flex flex-wrap font-normal normal-case mb-[5%] gap-x-2 pr-4">
                                 {stack.map((stack) => (
                                     <li
                                         key={stack}
@@ -111,21 +99,16 @@ export default function ProjectDetail() {
                     </div>
                     <div className="grid md:grid-flow-col  ">
                         <div className=" md:mr-[7vw]">
-                            <h3 className="pb-2 text-slate-200">{projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}</h3>
-                            <ul className=" list-disc list-outside pl-4 pb-4 text-slate-300">
+                            <h3 className="pb-2 text-slate-200 normal-case">
+                                {projectId === "project-4" ? "Ideas for future projects:" : "Learning goals:"}
+                            </h3>
+                            <ul className=" list-disc list-outside pl-4 pb-4 text-slate-300 font-normal normal-case">
                                 {goals.map((goal) => (
                                     <li key={goal}>{goal}</li>
                                 ))}
                             </ul>
                         </div>
-                        {lighthouse && (
-                            <img
-                                src={lighthouse}
-                                alt="lighthouse tool stats"
-                                className=" mt-8 md:mt-0   rounded-md w-[80%]     "
-                                //onClick={handleClick}
-                            />
-                        )}
+                        {lighthouse && <img src={lighthouse} alt="lighthouse tool stats" className=" mt-8 md:mt-0   rounded-md w-[80%]     " />}
                     </div>
                 </div>
             </TracingBeam>

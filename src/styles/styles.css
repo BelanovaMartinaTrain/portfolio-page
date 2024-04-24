@@ -15,9 +15,9 @@ h5 {
 }
 
 p {
-    @apply text-neutral-300 print:text-neutral-500 text-sm font-light md:text-[0.9rem] print:text-xs;
+    @apply text-neutral-300 print:text-neutral-500 text-sm font-light md:text-[0.9rem] print:text-xs ;
 }
 
 ul {
-    @apply text-neutral-300 print:text-neutral-800 text-sm font-light print:text-xs md:text-base;
+    @apply text-neutral-300 print:text-neutral-800 text-sm font-light print:text-xs md:text-base ;
 }
