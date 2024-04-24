@@ -54,7 +54,7 @@ export default function ProjectDetail() {
                                     </li>
                                 ))}
                             </ul>
-                            <div className=" mt-3  grid grid-flow-col lg:grid-flow-row dunno:grid-flow-col">
+                            <div className=" mt-3  flex flex-wrap">
                                 {links.map((link) => (
                                     <Link
                                         to={link.link}

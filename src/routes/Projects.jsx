@@ -20,7 +20,7 @@ function Projects() {
                     inputValue={inputValue}
                 />
             </div>
-            <div className="md:max-w-7xl grid gap-5 grid-flow-row grid-cols-1 md:grid-cols-8 lg:grid-cols-9 mt-4  rounded-2xl mx-auto ">
+            <div className="md:max-w-7xl grid gap-5 grid-flow-row grid-cols-1 md:grid-cols-8 lg:grid-cols-6 xl:grid-cols-9 mt-4  rounded-2xl mx-auto ">
                 {searchArray.length !== 0 && searchArray[0] !== ""
                     ? filtering(projectData, "stack", searchArray).map((project) => <Card key={project.id} props={project} />)
                     : projectData.map((project) => <Card key={project.id} props={project} />)}

@@ -42,12 +42,12 @@ export default function Card({ props }) {
                         </h2>
 
                         <div className="font-light grid justify-center  w-full font-dmsans mt-1 p-4 lg:p-3 absolute transition-opacity ease-in-out duration-300 opacity-0 xs:group-hover:opacity-100">
-                            <h3 className="text-xs lg:text-base normal-case">{props.description}</h3>
-                            <div className="mt-2 lg:mt-4  text-xs lg:text-sm  flex flex-wrap  ">
+                            <h3 className="text-xs xs:text-base normal-case">{props.description}</h3>
+                            <div className="mt-2 sm:mt-4  text-xs xs:text-sm  flex flex-wrap  ">
                                 {props.stack.map((stack, index) => (
                                     <span
                                         key={`stack-${index}`}
-                                        className="bg-slate-950 border m-[0.2rem] px-[0.3rem] lg:p-[0.1rem] lg:px-[0.4rem] rounded-xl flex "
+                                        className="bg-slate-950 border m-[0.2rem] px-[0.3rem] xs:p-[0.1rem] xs:px-[0.4rem] rounded-xl flex "
                                     >
                                         {stack}
                                     </span>

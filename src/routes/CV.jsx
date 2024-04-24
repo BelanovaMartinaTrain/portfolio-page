@@ -32,12 +32,12 @@ export default function CV() {
                 </div>
                 {data && (
                     <div
-                        className="p-0 md:p-4 print:p-0 bg-slate-950 text-neutral-300 border border-blue-950/[0.5] 
+                        className="p-0 pb-6 pt-2 md:p-4 print:p-0 bg-slate-950 text-neutral-300 border border-blue-950/[0.5] 
                     rounded-lg print:border-none mt-4 print:mt-0 print:text-black max-w-6xl print:max-w-7xl w-full gap-4 
                     text-normal print:text-xs grid lg:grid-cols-3 print:grid-cols-3"
                     >
                         <div className="col-span-2 p-4 pb-0 lg:pb-4 print:p-0">
-                            <h1 className="text-4xl pb-2 text-neutral-50 print:text-sky-800 font-medium">
+                            <h1 className="text-3xl md:text-4xl pb-2 text-neutral-50 print:text-sky-800 font-medium">
                                 {data.personal.first_name} {data.personal.last_name}
                             </h1>
                             <h2 className="print:text-sm">{data.personal.summary}</h2>

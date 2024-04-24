@@ -37,13 +37,13 @@ export default function CourseComponent({ course }) {
                     {course.duration} ({course.progress})
                 </div>
                 <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-2 md:mt-0 md:order-none  ">
-                    <h3 className="text-lg text-slate-400 mt-3 normal-case">Learning Stack:</h3>
+                    <h3 className="text-base md:text-lg text-slate-400 mt-3 normal-case pb-1">Learning Stack:</h3>
                     <div className="text-slate-300  flex gap-2 flex-wrap md:py-1">
                         {course.learningStack.map((stack) => (
                             <div
                                 key={stack}
                                 className="border-slate-600 rounded-[0.7rem] px-2 py-1 whitespace-nowrap
-                                 flex justify-center self-center align-middle text-center border w-fit "
+                                 flex justify-center self-center align-middle text-center border w-fit text-sm md:text-base"
                             >
                                 {stack}
                             </div>
