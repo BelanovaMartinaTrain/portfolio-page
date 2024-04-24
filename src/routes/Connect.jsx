@@ -2,6 +2,7 @@ import ConnectForm from "../components/ConnectForm";
 import ButtonLink from "../components/ButtonLink";
 import { NavLink } from "react-router-dom";
 import { BsPersonVcard } from "react-icons/bs";
+import { BottomGradient } from "../components/ui/effects/bottomGradient";
 
 function Connect() {
     return (
@@ -37,6 +38,7 @@ function Connect() {
                     >
                         <BsPersonVcard className="h-4 w-4 text-slate-300 mr-2" />
                         Curriculum Vitae
+                        <BottomGradient />
                     </NavLink>
                 </div>
                 <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-8 h-[1px] w-full" />
