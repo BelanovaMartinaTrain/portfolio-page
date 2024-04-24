@@ -5,7 +5,7 @@ import { Input } from "./ui/input/input";
 import { TextArea } from "./ui/input/textarea";
 import { cn } from "../utils/cn";
 import { BottomGradient } from "./ui/effects/bottomGradient";
-import { FaPaperPlane, FaSmile } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
 
 export default function ConnectForm() {
     const [formDataState, setFormDataState] = useState({
@@ -115,7 +115,7 @@ export default function ConnectForm() {
                     !showAlert ? "opacity-0" : "opacity-100"
                 }`}
             >
-                Thank you for your message {submittedForm.name}! I&apos;ll get in touch with you soon <FaSmile className=" ml-1 mt-[0.2rem]" />
+                Thank you for your message {submittedForm.name}! I&apos;ll get in touch with you soon :)
             </div>
         </>
     );

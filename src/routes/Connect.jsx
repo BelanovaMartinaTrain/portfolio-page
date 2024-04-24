@@ -10,20 +10,26 @@ function Connect() {
 
                 {/* <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-8 h-[1px] w-full" /> */}
                 <p className=" text-lg font-light max-w-sm  text-slate-100">Check out my profiles:</p>
-                <div className="flex mt-6 mx-[0.4rem] justify-between">
+                <div className="flex flex-col gap-4 md:gap-[5%] lg:gap-[10%] md:flex-row mt-6 mx-[0.4rem] w-full md:justify-between">
                     <ButtonLink
                         label="LinkedIn"
                         linkTo={"https://www.linkedin.com/in/martina-belanová-b08646145"}
-                        linkClass={""}
+                        linkClass={"w-full "}
                         spanClass={""}
                         iconType={"linkedin"}
                     />
-                    <ButtonLink label="Github" linkTo={"https://github.com/BelanovaMartinaTrain"} linkClass={""} spanClass={""} iconType={"github"} />
+                    <ButtonLink
+                        label="Github"
+                        linkTo={"https://github.com/BelanovaMartinaTrain"}
+                        linkClass={"w-full"}
+                        spanClass={""}
+                        iconType={"github"}
+                    />
                     <ButtonLink
                         label="Curriculum Vitae
 "
                         linkTo={""}
-                        linkClass={""}
+                        linkClass={"w-full"}
                         spanClass={""}
                         iconType={""}
                     />
