@@ -3,7 +3,7 @@ h2 {
 }
 
 h3 {
-    @apply text-neutral-200 print:text-sky-700 text-base font-medium md:text-lg print:text-sm ;
+    @apply text-neutral-200 print:text-sky-700 text-base font-medium md:text-lg print:text-sm uppercase;
 }
 
 h4 {
