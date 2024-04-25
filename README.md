@@ -1,8 +1,25 @@
-# React + Vite
+# Personal portfolio page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Check out my portfolio including my independent projects, list of completed courses and CV downloadable in a couple of different formats (JSON, PDF, XML).
+The site is purely front-end site, only using basic backend services (like EmailJS)
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   React
+-   Javascript
+-   Framer motion
+-   EmailJS
+
+## Fun features
+
+-   animations
+-   filtering with debounce
+-   nice contact form
+
+## Instalation
+
+```
+npm install
+npm run build
+npm run preview
+```
