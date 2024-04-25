@@ -7,6 +7,7 @@ The site is purely front-end site, only using basic backend services (like Email
 
 -   React
 -   Javascript
+-   TailwindCSS
 -   Framer motion
 -   EmailJS
 
