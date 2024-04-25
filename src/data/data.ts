@@ -66,7 +66,7 @@ export const projectData = [
             "Nested routes",
         ],
         stack: ["React", "Javascript", "Framer motion", "Tailwind", "HTML", "CSS"],
-        links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/AuroraForecast" }],
+        links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/portfolio-page" }],
         imageClass: "xs:group-hover:opacity-40 opacity-100 border border-t-blue-600/[0.2] border-x-blue-600/[0.3] border-b-transparent",
     },
     {
