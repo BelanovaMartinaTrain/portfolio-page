@@ -10,13 +10,11 @@ export default function useSearchParamsToFilterArray(key) {
     const debouncedRequest = useDebounce(() => {
         setSearchParams({ [key]: [inputValue.split(" ")] });
         setsearchArray(inputValue.split(" "));
-        console.log(inputValue);
     });
 
     function handleChange(event) {
         const value = event.target.value;
         setInputValue(value);
-
         debouncedRequest();
     }
 

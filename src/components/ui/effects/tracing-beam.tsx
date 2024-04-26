@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll, useVelocity, useSpring } from "framer-motion";
 import { cn } from "../../../utils/cn";
 
-export const TracingBeam = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+export const TracingBeam = ({ children, className, divKey }: { children: React.ReactNode; className?: string; divKey: string }) => {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -19,7 +19,7 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
         if (contentRef.current) {
             setSvgHeight(contentRef.current.offsetHeight);
         }
-    }, []);
+    }, [divKey]);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -88,7 +88,7 @@ export const TracingBeam = ({ children, className }: { children: React.ReactNode
                     </defs>
                 </svg>
             </div>
-            <div ref={contentRef} className="">
+            <div ref={contentRef} key={divKey} className="relative">
                 {children}
             </div>
         </motion.div>

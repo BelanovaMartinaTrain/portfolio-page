@@ -10,7 +10,7 @@ export default function CoursesList() {
     const { inputValue, searchArray, handleChange, handleClick } = useSearchParamsToFilterArray("stack");
     return (
         <>
-            <TracingBeam className="ml-4 lg:mx-auto px-6 mt-2 mb-[10%]">
+            <TracingBeam divKey="journey" className="ml-4 lg:mx-auto px-6 mt-2 mb-[10%]">
                 <InputFilter
                     label={"Filter stack"}
                     divClass={"justify-center "}
