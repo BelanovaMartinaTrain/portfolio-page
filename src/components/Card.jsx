@@ -37,11 +37,11 @@ export default function Card({ props }) {
                         />
                         {!imgLoaded && <SkeletonImage imgClass={`w-full block `} />}
 
-                        <h2 className="group/link min-h-fit rounded-2xl font-medium xs:text-lg xxs:text-base text-center text-xs sm:text-xl md:text-lg lg:text-xl flex justify-center font-dmsans  my-1  xs:my-3 md:my-1 lg:my-1 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
+                        <h2 className="group/link min-h-fit rounded-2xl font-medium xs:text-lg xxs:text-base text-center text-xs sm:text-xl md:text-lg lg:text-xl flex justify-center my-1  xs:my-3 md:my-1 lg:my-1 bg-gradient-to-r from-blue-500 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                             {props.title}{" "}
                         </h2>
 
-                        <div className="font-light grid justify-center  w-full font-dmsans mt-1 p-4 lg:p-3 absolute transition-opacity ease-in-out duration-300 opacity-0 xs:group-hover:opacity-100">
+                        <div className="font-light grid justify-center  w-full  mt-1 p-4 lg:p-3 absolute transition-opacity ease-in-out duration-300 opacity-0 xs:group-hover:opacity-100">
                             <h3 className="text-xs xs:text-base normal-case">{props.description}</h3>
                             <div className="mt-2 sm:mt-4  text-xs xs:text-sm  flex flex-wrap  ">
                                 {props.stack.map((stack, index) => (

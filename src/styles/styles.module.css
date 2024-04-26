@@ -1,0 +1,23 @@
+.cv_h2 {
+    @apply text-neutral-300 print:text-neutral-800 text-sm font-medium md:text-base  ;
+}
+
+.cv_h3 {
+    @apply text-neutral-200 print:text-sky-700 text-base font-medium md:text-lg  uppercase;
+}
+
+.cv_h4 {
+    @apply text-neutral-50 print:text-neutral-950 text-sm font-medium  md:text-base ;
+}
+
+.cv_h5 {
+    @apply text-neutral-200 print:text-neutral-900 text-sm font-normal  md:text-base;
+}
+
+.cv_p {
+    @apply text-neutral-300 print:text-neutral-500 text-sm font-light md:text-[0.9rem]  ;
+}
+
+.cv_ul {
+    @apply text-neutral-300 print:text-neutral-800 text-sm font-light  md:text-base ;
+}

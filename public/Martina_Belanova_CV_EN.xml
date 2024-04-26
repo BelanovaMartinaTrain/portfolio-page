@@ -26,12 +26,11 @@
     <position>Network Engineer</position>
     <startDate>2021-11</startDate>
     <endDate>2023-10</endDate>
-    <summary>Maintain the network</summary>
-    <summary>Handle service tickets</summary>
-    <summary>Create reports</summary>
-    <summary>Handle installation of our new customers with on-site technicians</summary>
-    <summary>Create documentation</summary>
-    <summary>Created a workflow to release unused public IPv4 addresses as my personal side project</summary>
+    <summary>I was a part of multiple network improvements leading to customer satisfaction</summary>
+    <summary>Every customer ticket was a priority so I&#x27;ve always met the SLA with a great time to spare</summary>
+    <summary>I was setting up an infrastructure for mass events where the availability and reliability was crucial</summary>
+    <summary>Set up network and supported live events with thousands of visitors</summary>
+    <summary>I created a workflow with the help of Python scripts to release unused public IPv4 addresses as my personal side project</summary>
   </work>
   <work>
     <company>AT&amp;T Global Network Services Slovakia, s.r.o.</company>
@@ -40,13 +39,9 @@
     <position>LAN/WAN Service Manager</position>
     <startDate>2018-07</startDate>
     <endDate>2021-08</endDate>
-    <summary>Ensure the installations, deliveries and availability were following the contract with Shell</summary>
-    <summary>Ensure incidents are solved within the SLA</summary>
-    <summary>Be in regular contact with the customer&#x27;s service managers to solve any concerns that may occur</summary>
-    <summary>Proactively review closed incident tickets</summary>
-    <summary>Help to avoid incidents by seeking out recurring problems</summary>
-    <summary>During transformation to Aruba to review the sites to ensure it&#x27;s delivered up to the agreed technical guidance</summary>
-    <summary>Create overviews of all assets and tickets by the customer&#x27;s specifications</summary>
+    <summary>I proactively reviewed even closed incident tickets to seek problem mitigation</summary>
+    <summary>I helped to avoid incidents by seeking out recurring problems and suggesting solutions</summary>
+    <summary>I created a documentation system to keep a better overview during Aruba transformation and proactively followed up on found issues</summary>
   </work>
   <work>
     <company>X-NET spol. s r. o.</company>
@@ -55,10 +50,9 @@
     <position>Technical Specialist</position>
     <startDate>2017-04</startDate>
     <endDate>2018-07</endDate>
-    <summary>Help with maintaining and managing network services for our customers</summary>
-    <summary>Suggest solutions for projects and their implementation and network design</summary>
-    <summary>Maintain documentation</summary>
-    <summary>Support with wide variety of different devices and services (Huawei, Digi, Sophos, Pulse secure ,LAN, WAN, Wifi solutions, VPN solutions)</summary>
+    <summary>I personally organised and overviewed a transformation at Billa sites</summary>
+    <summary>I implemented and documented IEEE 802.1X at our company to pass a security audit</summary>
+    <summary>I was flexible to support a wide variety of different devices and services (Huawei, Digi, Sophos, Pulse secure ,LAN, WAN, Wifi solutions, VPN solutions)</summary>
   </work>
   <work>
     <company>AT&amp;T Global Network Services Slovakia</company>
@@ -67,13 +61,11 @@
     <position>Dedicated Client MACD Engineer</position>
     <startDate>2012-03</startDate>
     <endDate>2017-04</endDate>
-    <summary>Configuration, maintaining and troubleshooting Cisco devices</summary>
-    <summary>Support of Juniper devices, F5, Arubas, Netgates and more</summary>
-    <summary>Work with on-site technicians during installations of network solutions at customer&#x27;s premise</summary>
-    <summary>Bring up whole sites with several types of devices with redundancy and security solutions</summary>
-    <summary>Every site installation required excessive amount of troubleshooting as a part of working all around the world with a great amount of different local providers with their own limitations</summary>
-    <summary>Lead the calls during the installations with team members from multiple companies and multiple countries</summary>
-    <summary>Support the AT&amp;Ts infrastructure for dedicated customers around the world 24/7.</summary>
+    <summary>The biggest project was migration of Sears stores under AT&amp;T where me and my small team came up with a workflow to migrate 3000 stores in a few months</summary>
+    <summary>I worked through a huge amount of language barrier working at the sites with no english speakers with the use of a non-technical translator with successful results</summary>
+    <summary>I&#x27;ve met with a variety of devices like Juniper, F5, Arubas, Netgates and more</summary>
+    <summary>I lead the calls during the installations with team members from multiple companies and multiple countries</summary>
+    <summary>We supported the AT&amp;Ts infrastructure for dedicated customers around the world 24/7.</summary>
   </work>
   <education>
     <institution>Slovak University of Technology</institution>
@@ -167,6 +159,7 @@
     <keywords>Cycling</keywords>
     <keywords>Books</keywords>
     <keywords>Nature</keywords>
+    <keywords>Photography</keywords>
     <keywords>Paddleboard</keywords>
     <keywords>Traveling</keywords>
     <keywords>Music</keywords>

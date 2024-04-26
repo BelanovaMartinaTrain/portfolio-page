@@ -19,7 +19,7 @@ export default function CourseComponent({ course }) {
                     <p className="text-blue-400 text-[0.8rem]">{course.platform}</p>
                 </div>
                 <Link to={course.link} target="_blank" tabIndex={-1}>
-                    <h2 className=" text-xl text-slate-100 mb-4  font-dmsans mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
+                    <h2 className=" text-xl text-slate-100 mb-4   mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
                         {course.title}{" "}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

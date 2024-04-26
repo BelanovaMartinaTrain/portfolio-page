@@ -8,7 +8,7 @@ function Connect() {
     return (
         <>
             <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-2 h-[1px] w-full" />
-            <div className="max-w-5xl w-full font-dmsans mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black">
+            <div className="max-w-5xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black">
                 <h2 className="font-normal text-2xl md:text-3xl text-slate-200 mb-8">Let&apos;s connect!</h2>
 
                 {/* <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-8 h-[1px] w-full" /> */}
