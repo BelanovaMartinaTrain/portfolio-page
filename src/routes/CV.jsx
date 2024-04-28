@@ -37,7 +37,7 @@ export default function CV() {
                     text-normal print:text-xs grid lg:grid-cols-3 print:grid-cols-3"
                     >
                         <div className="col-span-2 p-4 pb-0 lg:pb-4 print:p-0 ">
-                            <h1 className="text-3xl md:text-4xl pb-2 text-neutral-50 print:text-sky-800 font-medium">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl pb-2 text-neutral-50 print:text-sky-800 font-medium">
                                 {data.personal.first_name} {data.personal.last_name}
                             </h1>
                             <h2 className={`${styles.cv_h2} print:text-sm`}>{data.personal.summary}</h2>
