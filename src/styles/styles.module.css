@@ -1,5 +1,5 @@
 .cv_h2 {
-    @apply text-neutral-300 print:text-neutral-800 text-sm font-medium md:text-base  ;
+    @apply text-neutral-300 print:text-neutral-800 text-[15px] font-medium md:text-base  ;
 }
 
 .cv_h3 {

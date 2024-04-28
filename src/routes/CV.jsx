@@ -60,7 +60,7 @@ export default function CV() {
                                         {new Date(job.startDate).getFullYear()} - {new Date(job.endDate).getFullYear()}
                                     </p>
                                     <h5 className={`${styles.cv_h5} print:text-xs`}>Responsibilities:</h5>
-                                    <ul className=" print:text-xs list-disc list-outside ml-8 print:text-black">
+                                    <ul className={`${styles.cv_ul} print:text-xs list-disc list-outside ml-8  print:text-black`}>
                                         {job.summary.map((task, index) => (
                                             <li key={`job-${index}`}>{task}</li>
                                         ))}
