@@ -36,7 +36,7 @@ export const projectData = [
         image: "/server.jpg",
         alt: "server closeup",
         goals: [
-            "Typescript :)",
+            "Typescript",
             "Node.js backend server setup",
             "REST API endpoints",
             "Express JS framework",
