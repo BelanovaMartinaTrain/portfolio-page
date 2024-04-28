@@ -41,9 +41,9 @@ export default function ProjectDetail() {
                     </h2>
 
                     <div className="grid grid-flow-row grid-cols-1 md:grid-flow-col gap-y-2  md:grid-cols-10 mb-10  ">
-                        <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-4 md:mt-0 md:order-none  ">
-                            <h3 className="text-lg text-slate-200 normal-case">Tech Stack:</h3>
-                            <ul className="text-slate-300 flex flex-wrap font-normal normal-case mb-[5%] gap-x-2 pr-4">
+                        <div className="grid md:items-start col-span-2  md:col-span-4 md:col-start-1  order-2 mt-4 md:mt-0 md:order-none  ">
+                            <h3 className="text-lg  text-slate-200 normal-case">Tech Stack:</h3>
+                            <ul className="text-slate-300  flex flex-wrap font-normal normal-case mb-[5%] gap-x-2 pr-4">
                                 {stack.map((stack) => (
                                     <li
                                         key={stack}
@@ -54,7 +54,7 @@ export default function ProjectDetail() {
                                     </li>
                                 ))}
                             </ul>
-                            <div className=" mt-3  flex flex-wrap">
+                            <div className=" md:mt-3  flex flex-wrap">
                                 {links.map((link) => (
                                     <Link
                                         to={link.link}

@@ -18,8 +18,8 @@ export default function CourseComponent({ course }) {
                     )}
                     <p className="text-blue-400 text-[0.8rem]">{course.platform}</p>
                 </div>
-                <Link to={course.link} target="_blank" tabIndex={-1}>
-                    <h2 className=" text-xl text-slate-100 mb-4   mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
+                <Link to={course.link} target="_blank">
+                    <h2 className=" text-[1.18rem] md:text-xl text-slate-100 mb-4   mt-2 flex transition duration-200 hover:drop-shadow-[0px_0px_3px_rgba(255,255,255,0.8)]">
                         {course.title}{" "}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -37,12 +37,12 @@ export default function CourseComponent({ course }) {
                     {course.duration} ({course.progress})
                 </div>
                 <div className="grid col-span-2  md:col-span-4 md:col-start-1  order-2 mt-2 md:mt-0 md:order-none  ">
-                    <h3 className="text-base md:text-lg text-slate-400 mt-3 normal-case pb-1">Learning Stack:</h3>
+                    <h3 className="text-sm md:text-base text-slate-400 mt-3 normal-case pb-2 md:pb-1">Learning Stack:</h3>
                     <div className="text-slate-300  flex gap-2 flex-wrap md:py-1">
                         {course.learningStack.map((stack) => (
                             <div
                                 key={stack}
-                                className="border-slate-600 rounded-[0.7rem] px-2 py-1 whitespace-nowrap
+                                className="border-slate-600 rounded-[0.7rem] px-[0.4rem] py-[0.15rem] md:px-2 md:py-1 whitespace-nowrap
                                  flex justify-center self-center align-middle text-center border w-fit text-sm md:text-base"
                             >
                                 {stack}
