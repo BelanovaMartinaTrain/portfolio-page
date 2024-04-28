@@ -45,6 +45,7 @@ export const projectData = [
             "Time limit for API calls and serving data from REDIS storage",
             "Docker deploy",
             "VPS setup with load balancer",
+            "Image transformation service",
         ],
         stack: ["Node.js", "Express", "Typescript", "REDIS", "Docker", "Ubuntu", "Digital Ocean", "ES6"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/backend-server" }],
@@ -59,6 +60,8 @@ export const projectData = [
         image: "/portfolio-screenshot.jpg",
         alt: "my portfolio webpage screenshot",
         goals: [
+            "Contact form",
+            "Filtering feature",
             "Playing with framer-motion",
             "Trying tricks and features of Tailwind",
             "React Router 6",

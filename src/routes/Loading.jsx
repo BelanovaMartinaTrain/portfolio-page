@@ -15,7 +15,7 @@ export default function LoadingPage() {
     return (
         <>
             <div
-                className={`absolute inset-0 w-full h-full bg-black transition-opacity ease-out duration-1000  ${
+                className={`absolute font-dmsans inset-0 w-full h-full bg-black transition-opacity ease-out duration-1000  ${
                     isLoaded ? "opacity-0" : "opacity-100"
                 }`}
             >
