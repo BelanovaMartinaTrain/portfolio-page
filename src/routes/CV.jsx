@@ -32,7 +32,7 @@ export default function CV() {
                 </div>
                 {data && (
                     <div
-                        className="p-0 print:border-none pb-6 pt-2 md:p-4 print:m-0 print:p-0 bg-slate-950 shadow-test print:shadow-none text-neutral-300 border border-blue-950/[0.5] 
+                        className="p-0 print:border-none pb-6 pt-2 md:p-4 print:m-0 print:p-0 bg-slate-950 shadow-effect print:shadow-none text-neutral-300 border border-blue-950/[0.5] 
                     rounded-lg  mt-4 print:mt-0 print:text-black max-w-6xl print:max-w-7xl w-full gap-4 
                     text-normal print:text-xs grid lg:grid-cols-3 print:grid-cols-3"
                     >
@@ -53,8 +53,8 @@ export default function CV() {
                             <h3 className={`${styles.cv_h3} mt-4 mb-2 lg:mb-0 print:mb-0 print:text-sm`}>Work experience:</h3>
                             {data.work.map((job) => (
                                 <div key={job.company} className=" mb-5 lg:mb-4 print:mb-2">
-                                    <h4 className={`${styles.cv_h4} print:text-xs`}>{job.company}</h4>
                                     <h4 className={`${styles.cv_h4} print:text-xs`}>{job.position}</h4>
+                                    <h4 className={`${styles.cv_h4} print:text-xs`}>{job.company}</h4>
 
                                     <p className={`${styles.cv_p} print:text-xs`}>
                                         {new Date(job.startDate).getFullYear()} - {new Date(job.endDate).getFullYear()}
