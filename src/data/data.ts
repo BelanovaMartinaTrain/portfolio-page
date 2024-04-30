@@ -67,8 +67,9 @@ export const projectData = [
             "React Router 6",
             "Implementation of classic React hooks",
             "Nested routes",
+            "Written in JS, migrated to TS"
         ],
-        stack: ["React", "Javascript", "Framer motion", "Tailwind", "HTML", "CSS"],
+        stack: ["React", "Javascript", "Framer motion", "Tailwind", "HTML", "CSS", "Typescript"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/portfolio-page" }],
         imageClass: "xs:group-hover:opacity-40 opacity-100 border border-t-blue-600/[0.2] border-x-blue-600/[0.3] border-b-transparent",
         lighthouse: "",
