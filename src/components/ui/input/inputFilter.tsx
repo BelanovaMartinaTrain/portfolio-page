@@ -8,7 +8,7 @@ type PropsInputFilter = {
     labelClass: string;
     inputClass: string;
     handleClick: () => void;
-    handleChange: () => void;
+    handleChange: (event: any) => void;
     inputValue: string;
 };
 

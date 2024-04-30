@@ -5,6 +5,7 @@ export const useDebounce = (callback: () => any) => {
     const ref = useRef<any>();
 
     useEffect(() => {
+        console.log(ref.current);
         ref.current = callback;
     }, [callback]);
 

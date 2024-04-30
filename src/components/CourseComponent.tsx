@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { SiScrimba, SiYoutube, SiUdemy } from "react-icons/si";
 
-type CourseType = {
+export type CourseType = {
     id: string;
     platform: string;
     link: string;

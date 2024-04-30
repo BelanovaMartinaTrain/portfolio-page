@@ -16,7 +16,7 @@ function Projects() {
                     divClass={"justify-center "}
                     labelClass={"text-slate-400"}
                     inputClass={""}
-                    handleChange={() => handleChange}
+                    handleChange={handleChange}
                     handleClick={handleClick}
                     inputValue={inputValue}
                 />

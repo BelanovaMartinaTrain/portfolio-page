@@ -7,6 +7,8 @@ export default function useSearchParamsToFilterArray(key: string) {
     const [searchArray, setsearchArray] = useState((!!searchParams && searchParams.size && searchParams?.get(key).split(",")) || []);
     const [inputValue, setInputValue] = useState(searchArray.join(" "));
 
+    console.log(searchParams, searchArray, inputValue);
+
     const debouncedRequest = useDebounce(() => {
         setSearchParams({ [key]: [inputValue.split(" ")] } as unknown as URLSearchParams);
         setsearchArray(inputValue.split(" "));
