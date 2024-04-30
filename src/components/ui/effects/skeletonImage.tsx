@@ -1,7 +1,7 @@
 import { cn } from "../../../utils/cn";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/prop-types
-export default function SkeletonImage({ imgClass }) {
+export default function SkeletonImage({ imgClass }: { imgClass: string }) {
     return (
         <>
             <div
@@ -24,3 +24,7 @@ export default function SkeletonImage({ imgClass }) {
         </>
     );
 }
+
+SkeletonImage.propTypes = {
+    imgClass: PropTypes.string,
+};

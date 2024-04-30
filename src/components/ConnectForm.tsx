@@ -27,17 +27,15 @@ export default function ConnectForm() {
     const [isError, setIsError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleChange = (event) => {
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
         setFormDataState((prev) => ({
             ...prev,
             [event.target.name]: event.target.value,
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault();
-        // const form = e.target;
-        // const formData = new FormData(form);
 
         setSubmittedForm(formDataState);
         setIsLoading(true);
@@ -58,9 +56,9 @@ export default function ConnectForm() {
     };
 
     useEffect(() => {
-        let timer;
+        let timer: NodeJS.Timeout;
         if (showAlert) {
-            timer = setTimeout(() => setShowAlert(), 10000);
+            timer = setTimeout(() => setShowAlert(false), 10000);
         }
         return () => clearTimeout(timer);
     }, [showAlert]);
@@ -142,7 +140,6 @@ export default function ConnectForm() {
     );
 }
 
-// eslint-disable-next-line react/prop-types
-const LabelInputContainer = ({ children, className }) => {
+const LabelInputContainer = ({ children, className }: { children: React.ReactNode; className: string }) => {
     return <div className={cn("flex flex-col space-y-2 w-full", className)}>{children}</div>;
 };

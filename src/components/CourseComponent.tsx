@@ -2,7 +2,18 @@
 import { Link } from "react-router-dom";
 import { SiScrimba, SiYoutube, SiUdemy } from "react-icons/si";
 
-export default function CourseComponent({ course }) {
+type CourseType = {
+    id: string;
+    platform: string;
+    link: string;
+    title: string;
+    description: string;
+    duration: string;
+    progress: string;
+    learningStack: string[];
+};
+
+export default function CourseComponent({ course }: { course: CourseType }) {
     return (
         <>
             <div key={course.id} className="mb-10 ">

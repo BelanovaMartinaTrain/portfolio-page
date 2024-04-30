@@ -1,8 +1,14 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { projectData } from "../data/data";
 
-// eslint-disable-next-line react/prop-types
-export default function Navigation({ ulClassName, liClassName, submenuClassName, submenu }) {
+type NavigationPropsType = {
+    ulClassName: string;
+    liClassName: string;
+    submenuClassName: string;
+    submenu: boolean;
+};
+
+export default function Navigation({ ulClassName, liClassName, submenuClassName, submenu }: NavigationPropsType) {
     const location = useLocation();
 
     return (

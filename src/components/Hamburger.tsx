@@ -1,25 +1,24 @@
 import { useState, useRef, useEffect } from "react";
 import Navigation from "./Navigation";
 
-// eslint-disable-next-line react/prop-types
-export default function Hamburger({ hamburgerClass }) {
+export default function Hamburger({ hamburgerClass }: { hamburgerClass: string }) {
     const [isOpen, setIsOpen] = useState(false);
     const ulClassName = "  absolute   left-0 bg-black bg-opacity-75 w-screen   backdrop-blur-sm  transition-all duration-300  ease-in-out ";
     const liClassName = "  font-normal text-center transition-all duration-300  ease-in origin-top-right ";
     const refMenu = useRef(null);
 
-    const handleClick = (event) => {
+    const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         setIsOpen((prev) => !prev);
         event.stopPropagation();
     };
 
-    function handleDismiss(event) {
+    function handleDismiss(event: MouseEvent) {
         if (refMenu.current && !event.composedPath().includes(refMenu.current)) {
             setIsOpen(false);
         }
     }
 
-    function handleEscapeDismiss(event) {
+    function handleEscapeDismiss(event: KeyboardEvent) {
         if (event.key === "Escape") {
             setIsOpen(false);
         }

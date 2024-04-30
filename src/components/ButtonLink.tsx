@@ -3,9 +3,33 @@ import { BottomGradient } from "./ui/effects/bottomGradient";
 import { cn } from "../utils/cn";
 import { BsPersonVcard } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
+import { HTMLAttributes } from "react";
 
-// eslint-disable-next-line react/prop-types
-export default function ButtonLink({ children, label, linkTo, linkClass, spanClass, iconType, ...props }) {
+type PropsButtonLinkType = {
+    children?: React.ReactNode;
+    label?: string;
+    linkTo: string;
+    linkClass: string;
+    spanClass: string;
+    iconType: string;
+    rel?: string;
+    target?: string;
+    download?: boolean;
+    props?: HTMLAttributes<HTMLButtonElement>;
+};
+
+export default function ButtonLink({
+    children,
+    label,
+    linkTo,
+    linkClass,
+    spanClass,
+    iconType,
+    rel,
+    target,
+    download,
+    ...props
+}: PropsButtonLinkType) {
     return (
         <a
             href={linkTo}

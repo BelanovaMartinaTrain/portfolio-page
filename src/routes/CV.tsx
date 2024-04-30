@@ -26,7 +26,7 @@ export default function CV() {
                     <ButtonLink linkClass="" linkTo="/Martina_Belanova_CV_EN.json" spanClass={"text-sm"} iconType="download" download>
                         JSON
                     </ButtonLink>
-                    <ButtonLink linkClass="" href="/Martina_Belanova_CV_EN.xml" spanClass={"text-sm"} iconType="download" download>
+                    <ButtonLink linkClass="" linkTo="/Martina_Belanova_CV_EN.xml" spanClass={"text-sm"} iconType="download" download>
                         XML
                     </ButtonLink>
                 </div>

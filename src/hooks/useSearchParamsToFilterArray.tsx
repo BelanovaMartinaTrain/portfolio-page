@@ -2,13 +2,13 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useDebounce } from "./useDebounce";
 
-export default function useSearchParamsToFilterArray(key) {
+export default function useSearchParamsToFilterArray(key: string) {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [searchArray, setsearchArray] = useState((searchParams.size && searchParams.get(key).split(",")) || []);
+    const [searchArray, setsearchArray] = useState((!!searchParams && searchParams.size && searchParams?.get(key).split(",")) || []);
     const [inputValue, setInputValue] = useState(searchArray.join(" "));
 
     const debouncedRequest = useDebounce(() => {
-        setSearchParams({ [key]: [inputValue.split(" ")] });
+        setSearchParams({ [key]: [inputValue.split(" ")] } as unknown as URLSearchParams);
         setsearchArray(inputValue.split(" "));
     });
 

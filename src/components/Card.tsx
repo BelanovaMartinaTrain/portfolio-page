@@ -1,12 +1,19 @@
-/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import { MovingBorderComponent } from "./ui/effects/movingBorder";
 import SkeletonImage from "./ui/effects/skeletonImage";
 import { useEffect, useRef, useState } from "react";
 
-// eslint-disable-next-line react/prop-types
-export default function Card({ props }) {
-    const imgRef = useRef(null);
+export type PropType = {
+    id: string;
+    image: string;
+    imageClass: string;
+    title: string;
+    description: string;
+    stack: string[];
+};
+
+export default function Card({ props }: { props: PropType }) {
+    const imgRef = useRef<HTMLImageElement>(null);
     const [imgLoaded, setImgLoaded] = useState(false);
 
     useEffect(() => {

@@ -1,8 +1,26 @@
 import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../../../utils/cn";
-// eslint-disable-next-line react/prop-types
-export default function InputFilter({ label = "Filter stack", divClass, labelClass, inputClass, handleClick, handleChange, inputValue = "" }) {
+
+type PropsInputFilter = {
+    label: string;
+    divClass: string;
+    labelClass: string;
+    inputClass: string;
+    handleClick: () => void;
+    handleChange: () => void;
+    inputValue: string;
+};
+
+export default function InputFilter({
+    label = "Filter stack",
+    divClass,
+    labelClass,
+    inputClass,
+    handleClick,
+    handleChange,
+    inputValue = "",
+}: PropsInputFilter) {
     return (
         <>
             <div className={cn("flex mt-4  justify-start items-baseline ", divClass)}>

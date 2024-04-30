@@ -21,7 +21,7 @@ function Header() {
                     submenu={false}
                 />
 
-                <Hamburger />
+                <Hamburger hamburgerClass="" />
             </nav>
         </header>
     );

@@ -45,7 +45,7 @@ function Home() {
                             <NavLink to="/cv">
                                 <MovingBorderComponent
                                     className="bg-black/[0.1] border border-slate-800 flex items-center transition-all duration-300 justify-center hover:border-blue-700 hover:shadow-effect "
-                                    duration="7000"
+                                    duration={7000}
                                     containerClassName="h-[3.25rem] md:h-16 w-28 md:w-40"
                                     borderClassName="opacity-[0.9]"
                                     as="button"
