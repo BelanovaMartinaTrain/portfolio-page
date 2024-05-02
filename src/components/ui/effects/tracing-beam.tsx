@@ -37,10 +37,10 @@ export const TracingBeam = ({ children, className, divKey }: { children: React.R
         stiffness: 500,
         damping: 90,
     });
-    const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [0, svgHeight + 200]), {
-        stiffness: 500,
-        damping: 90,
-    });
+    // const y2 = useSpring(useTransform(scrollYProgress, [0, 1], [0, svgHeight + 200]), {
+    //     stiffness: 500,
+    //     damping: 90,
+    // });
 
     return (
         <motion.div ref={ref} className={cn("relative w-full max-w-4xl mx-auto h-full ", className)}>

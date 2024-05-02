@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <personal>
+    <first_name>Martina</first_name>
+    <last_name>Belanová</last_name>
+    <label>Full Stack Web Developer</label>
+    <image></image>
+    <email>belanova.m@gmail.com</email>
+    <url>https://martinabelanova.site/</url>
+    <address>Bratislava</address>
+    <phone>+421908483153</phone>
+    <summary>Pôvodne sieťová inžinierka, dnes, aj s pomocou samovzdelávania, full stack web developerka</summary>
+    <profiles>
+      <network>GitHub</network>
+      <url>https://github.com/BelanovaMartinaTrain</url>
+    </profiles>
+    <profiles>
+      <network>LinkedIn</network>
+      <url>https://www.linkedin.com/in/martina-belanov%C3%A1-b08646145/</url>
+    </profiles>
+  </personal>
+  <work>
+    <company>VNET a.s.</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Internetový provider</description>
+    <position>Sieťový inžinier</position>
+    <startDate>2021-11</startDate>
+    <endDate>2023-10</endDate>
+    <summary>Bola som súčasťou viacerých sieťových vylepšení, ktoré viedli k vyššej spokojnosti klientov</summary>
+    <summary>Každý tiket od klienta bol prioritou, takže vždy som splnila SLA aj s časovou rezervou</summary>
+    <summary>Zariaďovala som sieťovú infraštruktúru pre hromadné akcie, kde dostupnosť a spoľahlivosť boli veľmi dôležité</summary>
+    <summary>Zriaďovala som sieť a tiež poskytovala podporu pri živých prenosoch z akcií s tisíckami náštevníkov</summary>
+    <summary>Vytvorila som workflow s pomocou skriptov v Pythone na uvoľnenie nepoužívaných verejných IPv4 adries ako môj vlastný vedľajší projekt</summary>
+  </work>
+  <work>
+    <company>AT&amp;T Global Network Services Slovakia, s.r.o.</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Globálny provider sieťových riešení</description>
+    <position>LAN/WAN Service Manager</position>
+    <startDate>2018-07</startDate>
+    <endDate>2021-08</endDate>
+    <summary>Proaktívne som kontrolovala aj zatvorené tikety, s cieľom nájsť nastávajúce problémy</summary>
+    <summary>Predchádzala som sieťovým incidentom tým, že som vyhľadávala opakujúce sa problémy a navrhovala riešenia</summary>
+    <summary>Vytvorila som systém dokumentácie pre lepší prehľad nad tranformáciou na Aruba zariadenia a tým proaktívne dozerala na vyriešenie nájdených komplikácií</summary>
+  </work>
+  <work>
+    <company>X-NET spol. s r. o.</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Outsourcing sieťových riešení</description>
+    <position>Technický špecialista</position>
+    <startDate>2017-04</startDate>
+    <endDate>2018-07</endDate>
+    <summary>Osobne som zorganizovala a dozerala na transformáciu v Billa prevádzkach</summary>
+    <summary>Implementovala a zadokumentovala som IEEE 802.1X bezpečnostný protokol vo firme pre úspešné absolvovanie bezpečnostného auditu</summary>
+    <summary>Nemala som problém pracovať s velkým množstvom rôznych typov zariadení a služieb (Huawei, Digi, Sophos, Pulse secure ,LAN, WAN, Wifi solutions, VPN solutions)</summary>
+  </work>
+  <work>
+    <company>AT&amp;T Global Network Services Slovakia</company>
+    <location>Bratislava, Slovakia</location>
+    <description>Globálny provider sieťových riešení</description>
+    <position>Dedicated Client MACD Engineer</position>
+    <startDate>2012-03</startDate>
+    <endDate>2017-04</endDate>
+    <summary>Najväčší projekt bola migrácia obchodov Sears pod AT&amp;T, kde sme s mojím malým tímom našli systém ako premigrovať 3000 prevádzok počas pár mesiacov</summary>
+    <summary>Vedela som prekonať veľké jazykové bariéry počas práce na miestach, kde technici neboli anglicky hovoriaci a jedinou pomocou bol netechnický prekladateľ a úspešne dokončiť inštaláciu</summary>
+    <summary>Stretli sme sa so širokým záberom zariadení okrem Cisco napríklad aj Juniper, F5, Aruba, Netgate a iné</summary>
+    <summary>Viedla som konferenčné hovory počas inštalácií s členmi tímu z rôznych firiem a krajín</summary>
+    <summary>Poskytovali sme technickú podporu pre sieťovú infraštruktúru AT&amp;T pre dedikovaných klientov pre celý svet 24/7</summary>
+  </work>
+  <education>
+    <institution>Slovenská technická univerzita</institution>
+    <faculty>Fakulta elektroniky a informatiky</faculty>
+    <area>Aplikovaná informatika</area>
+    <location>Bratislava, Slovakia</location>
+    <startDate>2009</startDate>
+    <endDate>2012</endDate>
+  </education>
+  <education>
+    <institution>Unievrzita Komenského</institution>
+    <faculty>Fakulta filozofie</faculty>
+    <area>Psychológia</area>
+    <location>Bratislava, Slovakia</location>
+    <startDate>2005</startDate>
+    <endDate>2009</endDate>
+  </education>
+  <education>
+    <institution>Gymnázium Golianova</institution>
+    <faculty></faculty>
+    <area>Informatika</area>
+    <location>Nitra, Slovakia</location>
+    <startDate>2001</startDate>
+    <endDate>2005</endDate>
+  </education>
+  <skills>
+    <name>Programovanie</name>
+    <keywords>Typescript</keywords>
+    <keywords>Python</keywords>
+    <keywords>Javascript</keywords>
+  </skills>
+  <skills>
+    <name>Frontend Development</name>
+    <keywords>React</keywords>
+    <keywords>Next.js</keywords>
+    <keywords>HTML</keywords>
+    <keywords>CSS</keywords>
+    <keywords>TailwindCSS</keywords>
+  </skills>
+  <skills>
+    <name>Backend Development</name>
+    <keywords>Node.js</keywords>
+    <keywords>Express</keywords>
+    <keywords>MongoDB</keywords>
+    <keywords>REDIS</keywords>
+    <keywords>REST API</keywords>
+    <keywords>Docker</keywords>
+  </skills>
+  <skills>
+    <name>Nástroje a platformy</name>
+    <keywords>Netlify</keywords>
+    <keywords>Vercel</keywords>
+    <keywords>Firebase</keywords>
+    <keywords>Github</keywords>
+    <keywords>Digital Ocean</keywords>
+    <keywords>Unix/Linux</keywords>
+  </skills>
+  <skills>
+    <name>LAN/WAN administrácia</name>
+    <keywords>Network administration</keywords>
+    <keywords>Cisco</keywords>
+    <keywords>VPN</keywords>
+    <keywords>VLAN</keywords>
+  </skills>
+  <skills>
+    <name>Iné schopnosti</name>
+    <keywords>Komunikácia</keywords>
+    <keywords>Schopnosť rýchlo sa učiť</keywords>
+    <keywords>Samostatnosť</keywords>
+    <keywords>Debugovanie</keywords>
+    <keywords>UI dizajn</keywords>
+  </skills>
+  <languages>
+    <language>Slovenčina</language>
+    <fluency>Rodná reč</fluency>
+  </languages>
+  <languages>
+    <language>Angličtina</language>
+    <fluency>B2/C1</fluency>
+  </languages>
+  <languages>
+    <language>Nemčina</language>
+    <fluency>A1</fluency>
+  </languages>
+  <languages>
+    <language>španielčina</language>
+    <fluency>A1</fluency>
+  </languages>
+  <interests>
+    <name>Hobbies</name>
+    <keywords>Bicyklovanie</keywords>
+    <keywords>Knihy</keywords>
+    <keywords>Príroda</keywords>
+    <keywords>Fotografia</keywords>
+    <keywords>Paddleboard</keywords>
+    <keywords>Cestovanie</keywords>
+    <keywords>Hudba</keywords>
+    <keywords>Programovanie</keywords>
+    <keywords>Rozprávanie</keywords>
+    <keywords>Prechádzky</keywords>
+    <keywords>Život</keywords>
+  </interests>
+  <projects>
+    <name>Stránka s portfóliom</name>
+    <description>Moja osobná stránka s portfóliom, kde chcem ukázať moje projekty, na ktorých som pracujem</description>
+    <url>https://martinabelanova.site/</url>
+  </projects>
+</root>

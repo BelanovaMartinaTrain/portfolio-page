@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ButtonLink from "../components/ButtonLink";
-import styles from "../styles/styles.module.css";
+import ButtonLink from "../../components/ButtonLink";
+import styles from "../../styles/styles.module.css";
 
-export default function CV() {
+export default function CVDetail() {
     const [data, setData] = useState(null);
 
     async function fetchData() {
