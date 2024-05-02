@@ -42,7 +42,7 @@ function Home() {
                                 <br /> Feel free to check out my portfolio and get a glimpse of my work. Enjoy!
                             </h1>
 
-                            <NavLink to="/testcv/en">
+                            <NavLink to="/cv/en">
                                 <MovingBorderComponent
                                     className="bg-black/[0.1] border border-slate-800 flex items-center transition-all duration-300 justify-center hover:border-blue-700 hover:shadow-effect "
                                     duration={7000}

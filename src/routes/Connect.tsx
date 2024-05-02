@@ -32,7 +32,7 @@ function Connect() {
                         target="_blank"
                     />
                     <NavLink
-                        to={"/cv"}
+                        to={"/cv/en"}
                         className=" text-slate-300 text-base w-full relative group/btn flex space-x-2 items-center justify-start px-4   rounded-md h-10 font-medium shadow-input bg-blue-950 shadow-[0px_0px_1px_1px_var(--blue-800)]"
                     >
                         <BsPersonVcard className="h-4 w-4 text-slate-300 mr-2" />
