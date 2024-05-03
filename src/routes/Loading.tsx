@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Loading } from "../components/LoadingWithEffect";
-import { SparklesCore } from "../components/ui/effects/sparkles";
+//import { SparklesCore } from "../components/ui/effects/sparkles";
+import { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 export default function LoadingPage() {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -12,6 +14,12 @@ export default function LoadingPage() {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            await loadSlim(engine);
+        });
+    }, []);
+
     return (
         <>
             <div
@@ -20,7 +28,7 @@ export default function LoadingPage() {
                 }`}
             >
                 <Loading />
-                <SparklesCore
+                {/* <SparklesCore
                     id="tsparticlesfullpage"
                     background="transparent"
                     minSize={0.2}
@@ -29,7 +37,7 @@ export default function LoadingPage() {
                     className="w-full h-full hidden"
                     particleColor="#2563EB"
                     speed={1}
-                />
+                /> */}
             </div>
         </>
     );
