@@ -43,7 +43,6 @@ export const SparklesCore = (props: ParticlesProps) => {
 
     return (
         <>
-            {!init && <img src="/bg-backup.gif" className=" w-full opacity-100  h-full" />}
             <motion.div animate={controls} className={cn("opacity-0", className)}>
                 {init && (
                     <Particles
