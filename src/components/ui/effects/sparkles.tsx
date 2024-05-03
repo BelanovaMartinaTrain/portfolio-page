@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import Particles from "@tsparticles/react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, SingleOrMultiple } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 import { cn } from "../../../utils/cn";
 import { motion, useAnimation } from "framer-motion";
 
@@ -21,10 +22,12 @@ export const SparklesCore = (props: ParticlesProps) => {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => setInit(true), 500);
-        return () => clearTimeout(timer);
+        initParticlesEngine(async (engine) => {
+            await loadSlim(engine);
+        }).then(() => {
+            setInit(true);
+        });
     }, []);
-
     const controls = useAnimation();
 
     const particlesLoaded = async (container?: Container) => {
@@ -56,7 +59,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                             zIndex: 1,
                         },
 
-                        fpsLimit: 60,
+                        fpsLimit: 120,
                         interactivity: {
                             events: {
                                 onClick: {
