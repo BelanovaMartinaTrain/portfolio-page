@@ -25,10 +25,10 @@ export default function LoadingPage() {
                     background="transparent"
                     minSize={0.2}
                     maxSize={1.8}
-                    particleDensity={150}
+                    particleDensity={200}
                     className="w-full h-full hidden"
                     particleColor="#2563EB"
-                    speed={0.5}
+                    speed={1}
                 />
             </div>
         </>
