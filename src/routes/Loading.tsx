@@ -10,7 +10,7 @@ export default function LoadingPage() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoaded(true);
-        }, 4000);
+        }, 5000);
 
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
@@ -27,16 +27,6 @@ export default function LoadingPage() {
                 }`}
             >
                 <Loading />
-                <SparklesCore
-                    id="tsparticlesfullpage"
-                    background="transparent"
-                    minSize={0.2}
-                    maxSize={1.8}
-                    particleDensity={200}
-                    className="w-full h-full hidden"
-                    particleColor="#2563EB"
-                    speed={1}
-                />
             </div>
         </>
     );

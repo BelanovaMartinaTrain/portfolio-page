@@ -22,7 +22,7 @@ function Home() {
                     <div className="grid sm:grid-cols-8 sm:grid-rows-2 sm:grid-flow-col  grid-rows-6 md:text-7xl text-3xl lg:text-6xl text-center tracking-wider text-white relative z-20">
                         <section className="text-lg  md:text-xl lg:text-2xl leading-9 text-center text-slate-50  row-span-5  row-start-1   sm:col-span-6 sm:col-start-2 sm:align-middle sm:row-span-2 md:items-center sm:justify-between sm:self-center">
                             <h1
-                                className={`text-xl md:text-2xl lg:text-3xl font-light  z-50 uppercase  drop-shadow-[0px_2px_2px_rgba(0,0,0,1)] p-0 transition-opacity ease-in duration-1000 delay-1000 ${
+                                className={` text-xl md:text-2xl lg:text-3xl font-light  z-50 uppercase  drop-shadow-[0px_2px_2px_rgba(0,0,0,1)] p-0 transition-opacity ease-in duration-1000 delay-1000 ${
                                     isLoading ? "opacity-0" : "opacity-100"
                                 }`}
                             >
