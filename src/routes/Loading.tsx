@@ -8,11 +8,15 @@ export default function LoadingPage() {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoaded(true);
+        }, 4000);
+
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
-        }).then(() => {
-            setIsLoaded(true);
         });
+
+        return () => clearTimeout(timer);
     }, []);
 
     return (
