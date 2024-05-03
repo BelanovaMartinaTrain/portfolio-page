@@ -34,7 +34,7 @@ export default function ButtonLink({
         <a
             href={linkTo}
             className={cn(
-                " relative group/btn flex space-x-2 items-center justify-start px-4   rounded-md h-10 font-medium shadow-input bg-blue-950 shadow-[0px_0px_1px_1px_var(--blue-800)]",
+                " relative group/btn flex space-x-1 xxs:space-x-2 items-center justify-start px-4 rounded-md h-10 font-medium shadow-input bg-blue-950 shadow-[0px_0px_1px_1px_var(--blue-800)]",
                 linkClass
             )}
             download={download}
