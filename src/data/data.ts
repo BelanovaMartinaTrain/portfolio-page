@@ -107,7 +107,7 @@ export const projectData = [
         image: "/tools.jpg",
         alt: "Closeup of a toolbox with tools details",
         goals: ["Starting this project now with Figma design and deciding the stack", "SQL", "OOP"],
-        stack: ["TBD", "Figma", "Java?", "Spring?", "Angular?", "Vue?", "SQL?"],
+        stack: ["TBD", "Figma", "Django?", "Java?", "Spring?", "Angular?", "Vue?", "SQL?"],
         links: [
             {
                 text: "IN PROGRESS...",
