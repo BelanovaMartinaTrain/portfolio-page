@@ -101,14 +101,18 @@ export const projectData = [
     },
     {
         id: "project-6",
-        title: "ShoPlan WebApp",
+        title: "ShoPlan WebApp (design stage)",
         description: "WebApp for creating shopping lists for DIY and small home projects' necessities with material calculator",
         continueDesc: "",
         image: "/tools.jpg",
         alt: "Closeup of a toolbox with tools details",
-        goals: ["SQL", "OOP"],
+        goals: ["Starting this project now with Figma design and deciding the stack", "SQL", "OOP"],
         stack: ["TBD", "Figma", "Java?", "Spring?", "Angular?", "Vue?", "SQL?"],
         links: [
+            {
+                text: "IN PROGRESS...",
+                link: "",
+            },
             {
                 text: "Figma Mobile",
                 link: "https://www.figma.com/proto/vmxZKpx68NEJHZP9qC77E0/ShoPlan?type=design&node-id=2-2&t=WUUY53Ix6ytCdZ4J-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=8%3A100&mode=design",
