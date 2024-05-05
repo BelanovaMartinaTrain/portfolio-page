@@ -115,7 +115,7 @@ export const projectData = [
             },
             {
                 text: "Figma Desktop",
-                link: "https://www.figma.com/proto/vmxZKpx68NEJHZP9qC77E0/ShoPlan?type=design&node-id=33-35&t=BXxZcSC4Sw6yffiq-1&scaling=scale-down&page-id=33%3A33&mode=design",
+                link: "https://www.figma.com/proto/vmxZKpx68NEJHZP9qC77E0/ShoPlan?type=design&node-id=33-35&t=ZltFkbvLJ11HAYdI-1&scaling=scale-down&page-id=33%3A33&mode=design",
             },
         ],
         imageClass: "xs:group-hover:opacity-20 opacity-80",
