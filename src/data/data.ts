@@ -67,7 +67,7 @@ export const projectData = [
             "React Router 6",
             "Implementation of classic React hooks",
             "Nested routes",
-            "Written in JS, migrated to TS"
+            "Written in JS, migrated to TS",
         ],
         stack: ["React", "Javascript", "Framer motion", "Tailwind", "HTML", "CSS", "Typescript"],
         links: [{ text: "Github", link: "https://github.com/BelanovaMartinaTrain/portfolio-page" }],
@@ -81,7 +81,7 @@ export const projectData = [
         continueDesc:
             "With its help I solely released more than 800 IP addresses in a short amount of time. Without it it would require for us to access every single contract and manually check and reassign each address. It's what the script does within the bounds of the company's lack of automation tools. ",
         image: "/python.jpg",
-        alt: "closeup of a cup with futuristic background",
+        alt: "Abstract picture with some random code",
         goals: [
             "Python scripting",
             "Automated SSH access",
@@ -94,6 +94,28 @@ export const projectData = [
             {
                 text: "Github",
                 link: "https://github.com/BelanovaMartinaTrain/python-script",
+            },
+        ],
+        imageClass: "xs:group-hover:opacity-20 opacity-80",
+        lighthouse: "",
+    },
+    {
+        id: "project-6",
+        title: "ShoPlan WebApp",
+        description: "WebApp for creating shopping lists for DIY and small home projects' necessities with material calculator",
+        continueDesc: "",
+        image: "/tools.jpg",
+        alt: "Closeup of a toolbox with tools details",
+        goals: ["SQL", "OOP"],
+        stack: ["TBD", "Figma", "Java?", "Spring?", "Angular?", "Vue?", "SQL?"],
+        links: [
+            {
+                text: "Figma Mobile",
+                link: "https://www.figma.com/proto/vmxZKpx68NEJHZP9qC77E0/ShoPlan?type=design&node-id=2-2&t=WUUY53Ix6ytCdZ4J-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=8%3A100&mode=design",
+            },
+            {
+                text: "Figma Desktop",
+                link: "https://www.figma.com/proto/vmxZKpx68NEJHZP9qC77E0/ShoPlan?type=design&node-id=33-35&t=BXxZcSC4Sw6yffiq-1&scaling=scale-down&page-id=33%3A33&mode=design",
             },
         ],
         imageClass: "xs:group-hover:opacity-20 opacity-80",
