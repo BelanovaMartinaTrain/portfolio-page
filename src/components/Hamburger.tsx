@@ -29,7 +29,7 @@ export default function Hamburger({ hamburgerClass }: { hamburgerClass: string }
         document.body.addEventListener("keydown", handleEscapeDismiss);
         return () => {
             document.body.removeEventListener("click", handleDismiss);
-            document.body.addEventListener("keydown", handleEscapeDismiss);
+            document.body.removeEventListener("keydown", handleEscapeDismiss);
         };
     }, []);
 
