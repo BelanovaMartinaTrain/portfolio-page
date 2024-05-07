@@ -10,7 +10,7 @@ export default function LoadingPage() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoaded(true);
-        }, 5000);
+        }, 7000);
 
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);

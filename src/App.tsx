@@ -18,7 +18,7 @@ function App() {
         // Wait for 8 seconds
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 6000);
+        }, 8000);
 
         return () => clearTimeout(timer);
     }, []);
