@@ -119,7 +119,7 @@
         },
         {
             "name": "Tools and platforms",
-            "keywords": ["Netlify", "Vercel", "Firebase", "Github", "Digital Ocean", "Unix/Linux"]
+            "keywords": ["Netlify", "Vercel", "Firebase", "Github", "Digital Ocean", "Unix/Linux", "Jest"]
         },
         {
             "name": "LAN/WAN administration",
@@ -127,7 +127,7 @@
         },
         {
             "name": "Misc skills",
-            "keywords": ["Communication", "Fast Learning", "Independence", "Debugging", "UI Design"]
+            "keywords": ["Communication", "Fast Learning", "Independence", "Debugging", "UI Design", "Unit Testing", "Integration Testing"]
         }
     ],
     "languages": [

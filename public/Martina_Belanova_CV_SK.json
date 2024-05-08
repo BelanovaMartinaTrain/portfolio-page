@@ -119,7 +119,7 @@
         },
         {
             "name": "Nástroje a platformy",
-            "keywords": ["Netlify", "Vercel", "Firebase", "Github", "Digital Ocean", "Unix/Linux"]
+            "keywords": ["Netlify", "Vercel", "Firebase", "Github", "Digital Ocean", "Unix/Linux", "Jest"]
         },
         {
             "name": "LAN/WAN administrácia",
@@ -127,7 +127,15 @@
         },
         {
             "name": "Iné schopnosti",
-            "keywords": ["Komunikácia", "Schopnosť rýchlo sa učiť", "Samostatnosť", "Debugovanie", "UI dizajn"]
+            "keywords": [
+                "Komunikácia",
+                "Schopnosť rýchlo sa učiť",
+                "Samostatnosť",
+                "Debugovanie",
+                "UI dizajn",
+                "Unit testovanie",
+                "Integration testovanie"
+            ]
         }
     ],
     "languages": [
