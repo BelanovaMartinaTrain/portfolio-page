@@ -16,7 +16,7 @@ export default function CV() {
             <div className="bg-gradient-to-r from-transparent via-slate-700 to-transparent my-2 print:my-0 h-[1px] w-full print:hidden " />
             <div className="w-full print:m-0 print:p-0  grid justify-center">
                 <div className=" flex justify-between items-baseline">
-                    <div className=" ">
+                    <div className=" print:none">
                         <NavLink
                             to="/cv/en"
                             className={` p-2 text-sm xxs:text-base sm:text-lg ${
