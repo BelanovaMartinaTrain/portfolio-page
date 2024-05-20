@@ -29,7 +29,8 @@ export default function CVDetail({ language }: { language: string }) {
                         </h1>
                         <h2 className={`${styles.cv_h2} print:text-sm`}>{data.personal.summary}</h2>
                         <div className="print:border-none print:p-0  mt-5 lg:hidden print:hidden mb-6">
-
+                            <h4 className={`${styles.cv_h4} print:text-xs`}>myemail@myemail.com</h4>
+                            <h4 className={`${styles.cv_h4} print:text-xs`}>+421908123456</h4>
                             <a href={data.personal.url} className="print:text-xs">
                                 https://martinabelanova.site
                             </a>
