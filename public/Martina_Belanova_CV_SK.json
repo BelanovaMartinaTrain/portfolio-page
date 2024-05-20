@@ -4,10 +4,10 @@
         "last_name": "Belanová",
         "label": "Full Stack Web Developer",
         "image": "",
-
+        "email": "email@email.com",
         "url": "https://martinabelanova.site/",
         "address": "Bratislava",
-
+        "phone": "+0123456789",
         "summary": "Pôvodne sieťová inžinierka, dnes, aj s pomocou samovzdelávania, full stack web developerka",
         "profiles": [
             {
